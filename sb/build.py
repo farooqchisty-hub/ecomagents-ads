@@ -56,7 +56,7 @@ def page(title, chip, sub, beats, how, shots, music, mg, voice, cast, contact, c
     out = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet"><style>{STYLE}</style></head><body><div class="wrap">
 <header><span class="chip">STORYBOARD · FOR APPROVAL</span><span class="chip">{e(chip)}</span><h1>{e(title)}</h1><p>{e(sub)} {words} words of dialogue.</p>
-<div class="toc"><a href="#story">Story</a><a href="#how">How it's built</a><a href="#screen">Screenplay</a><a href="#music">Music and sound</a><a href="#mg">Motion graphics</a><a href="#kf">Keyframes</a><a href="#checks">Checks</a><a href="#cost">Cost</a></div></header>
+<div class="toc"><a href="#story">Story</a><a href="#how">How it's built</a><a href="#screen">Screenplay</a><a href="#music">Music and sound</a><a href="#mg">Motion graphics</a><a href="#bible">Bible</a><a href="#kf">Keyframes</a><a href="#checks">Checks</a><a href="#cost">Cost</a></div></header>
 <h2 id="story">The story in beats</h2><div class="beats">{bh}</div>
 <h2 id="how">How it's built</h2><div class="grid">{hh}</div>
 {extra}
@@ -233,6 +233,39 @@ c5_extra = (hooks_html(C5_HOOKS) + "<h2>The value stack, sourced</h2><p class='m
             + "<tr><td><b>Total $468 / month, $5,616 / year</b></td><td>vs ₹699 once (about $8)</td><td></td></tr></table></div>")
 
 os.makedirs(os.path.join(HERE, "..", "c6"), exist_ok=True)
+
+C6_LOOK = [("Camera", "ARRI Alexa 35 look"), ("Lenses", "Zeiss Supreme Primes; 32 mm wides for the room, 85 mm for the poll singles, 100 mm macro for the key insert"),
+           ("Stock", "Kodak Vision3 500T, slightly pushed"), ("Grade", "deep blacks, cool monitor blue, warm practical lamps; lime is the one hot accent and only arrives with the launch"),
+           ("World", "Halden Outdoor Co. (fictional). Only two marks exist in the room: the back-wall sign and the BF26 mission patch. Every screen is abstract; console labels and HUD are added in post."),
+           ("Notes", "Apollo-era launch-control ritual, played straight: the comedy and the product both live in how seriously the room takes a Black Friday sale.")]
+C6_CAST = [
+  ("riley", "Riley · lead", "Founder of Halden, Flight. Speaks in units B and E.", ["card", "turn", "expr", "ward"]),
+  ("walt", "Walt · lead", "Operations lead, keeper of the Brand Brain binder. Units D and I.", ["card", "turn", "expr", "ward"]),
+  ("cv", "Customer Voice · support", "Unit C1.", ["card", "turn"]), ("creative", "Creative · support", "Units C2 and I (the whisper).", ["card", "turn"]),
+  ("offers", "Offers · support", "Unit C3.", ["card", "turn"]), ("page", "Landing Page · support", "Unit C4.", ["card", "turn"]),
+  ("recovery", "Recovery · support", "Unit C5.", ["card", "turn"]), ("care", "Care · support", "Unit C6.", ["card", "turn"]), ("profit", "Profit · support", "Unit C7.", ["card", "turn"]),
+]
+SHEET_NAME = {"card": "Identity card", "turn": "Turnaround", "expr": "Expression sheet", "ward": "Wardrobe sheet"}
+C6_LOCS = [("loc_room", "Launch control room", "wide, medium, reverse"), ("loc_flight", "Flight director desk", "top tier, key panel"), ("loc_wall", "Front wall screen", "the launch reveal")]
+C6_PROPS = [("prop_binder", "The Brand Brain binder", "six lime tabs"), ("prop_key", "The go key", "backlit lime key panel"), ("prop_headset", "Crew headset", "single-ear, lime ring")]
+C6_BOARDS = [("board1", "Halden Outdoor Co.", "brand_halden: logo and palette"), ("board2", "Launch control signage", "brand_signage: back-wall sign + BF26 patch"),
+             ("board3", "Console label system", "brand_consoles: added in post"), ("board4", "Wall screen + HUD states", "brand_wall: T-02:00, GO n/7, STORE LIVE, order toast"),
+             ("board5", "End card", "brand_endcard")]
+C6_KEYS = [("A", "start", "k01b_room"), ("B", "start", "k02_riley"), ("C1", "start", "k03_ctrl1"), ("C2", "start", "k04_ctrl2"), ("C3", "start", "k05_ctrl3"), ("C4", "start", "k06_ctrl4"),
+           ("C5", "start", "k07_ctrl5"), ("C6", "start", "k08_ctrl6"), ("C7", "start", "k09_ctrl7"), ("D", "start", "k10_walt"), ("E", "start", "k02b_riley_breath"),
+           ("F", "start", "k11_key"), ("F", "end", "k11b_key_end"), ("G", "start", "k12_wall"), ("G", "end", "k12b_wall_end"), ("H", "start", "k13b_react"), ("I", "start", "k14_button")]
+def bible_html():
+    fig = lambda src, n, d: f"<figure><img loading='lazy' src='{src}' alt=''><figcaption><b>{e(n)}</b><br>{e(d)}</figcaption></figure>"
+    out = ["<h2 id='bible'>Production bible <span class='m'>the cinematic harness recipe: leads get turnaround, expression, wardrobe and identity card; support get turnaround and card; every location, prop and brand board; a start frame per unit and an end frame where a shot must land exactly</span></h2>",
+           "<img class='contact' src='../c6/bible/concept_art.jpg' alt='concept art'><p class='m'>Concept art (share image)</p>",
+           "<h3>Look</h3><div class='grid'>" + "".join(f"<div class='card'><h4>{e(a)}</h4><p>{e(b)}</p></div>" for a, b in C6_LOOK) + "</div>"]
+    for cid, name, role, kinds in C6_CAST:
+        out.append(f"<h3>{e(name)}</h3><p class='m'>{e(role)}</p><div class='cast'>" + "".join(fig(f"../c6/bible/{cid}_{k}.jpg", SHEET_NAME[k], cid + '_' + k) for k in kinds) + "</div>")
+    out.append("<h3>Locations</h3><div class='cast'>" + "".join(fig(f"../c6/bible/{k}.jpg", n, d) for k, n, d in C6_LOCS) + "</div>")
+    out.append("<h3>Props</h3><div class='cast'>" + "".join(fig(f"../c6/bible/{k}.jpg", n, d) for k, n, d in C6_PROPS) + "</div>")
+    out.append("<h3>Brand boards</h3><div class='cast'>" + "".join(fig(f"../c6/boards/{k}.jpg", n, d) for k, n, d in C6_BOARDS) + "</div>")
+    out.append("<h3>Keyframes per unit</h3><div class='cast' style='grid-template-columns:repeat(auto-fill,minmax(170px,1fr))'>" + "".join(fig(f"../c6/kf/{k}.jpg", f"Unit {u} · {w}", k) for u, w, k in C6_KEYS) + "</div>")
+    return "".join(out)
 open(os.path.join(HERE, "c6.html"), "w").write(page(
     "Go For Launch", "Concept 6 · cinematic harness",
     "Black Friday, two minutes out. A launch control room runs a go/no-go poll where every station is one of the agents, and the founder gives the final go. 62.5 s, 9:16, North American cast.",
@@ -242,7 +275,7 @@ open(os.path.join(HERE, "c6.html"), "w").write(page(
      ("../c6/kf/cast_crew.jpg", "The crew", "Seven speaking controllers, one line each; the rest fill the room.")],
     "../c6/contact.jpg", C6_CHECKS,
     [("Cast cards + 14 keyframes (done)", 4.25), ("Veo 3.1, 15 units, 72 s at 720p (estimate $0.40/s)", 28.80), ("Re-roll budget (2 takes on speaking units)", 14.00), ("Score, 3 options", 1.20), ("Transcription checks", 0.20)],
-    "nothing past the keyframes has been spent. Approve, mark changes, or swap a station's line, and production starts with unit B (Riley) as the voice test.", extra=hooks_html(C6H)))
+    "nothing past the keyframes has been spent. Approve, mark changes, or swap a station's line, and production starts with unit B (Riley) as the voice test.", extra=hooks_html(C6H) + bible_html()))
 open(os.path.join(HERE, "c5.html"), "w").write(page(
     "Before One More Tool", "Concept 5 · AI avatar + value stack",
     "An AI presenter breaks down what eight single-job AI tools cost against a ₹699 one-time bundle, shows what the 16 agents actually do with animated cards over the real folder recordings, then the bonuses and the free swipe file. About 57 s, 9:16.",
