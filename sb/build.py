@@ -253,3 +253,89 @@ open(os.path.join(HERE, "c5.html"), "w").write(page(
     "nothing past the keyframes has been spent. Approve the script and the value comparison (or change the categories), and I record the voice first.",
     extra=c5_extra))
 print("ok")
+
+# ============================================================== CONCEPT 5, v2: A day in the life
+D_BEATS = [
+    ("Hook, 7:02 AM", "Kitchen, coffee, straight to camera: names D2C founders, ecom teams, performance marketers, and promises up to $5,600 a year saved."),
+    ("Who he is", "Jay runs paid ads for a candle brand. \"Here's my day.\""),
+    ("7:10 AM", "CPA's up overnight, his best ad is tired. Performance Marketing reads the export; Customer Voice pulls objections from reviews."),
+    ("9:30 AM", "Café: the founder wants four new ads by noon. Old way: five tools ($468 a month). Now: one folder, the Brand Brain, the Static Ad Generator, four ads."),
+    ("12:15 PM", "Walking: a competitor drops 20% off. Competitor Tracker: don't match it, bundle it."),
+    ("3:00 PM", "Office call: checkout leaks on mobile. CRO ranks the fixes; Recovery drafts email, SMS and WhatsApp."),
+    ("6:30 to 7 PM", "Couch: real profit, not just ROAS. Then the math: $468 a month in tools vs ₹699 once, the bonuses, the free swipe file, the CTA."),
+]
+D_HOW = [
+    ("Format", "A day-in-the-life vlog: phone-shot, timestamps on screen, Jay talking to camera in some setups and narrating over B-roll in others. Each scene is one real performance-marketer problem and the agent that handles it."),
+    ("Honesty", "A realistic AI person \"using\" the product can read as a real testimonial, and there are no real reviews yet. So: a small 'Dramatization · AI presenter' label stays on screen, Northlane is labelled fictional, and Jay never claims results (no 'my ROAS tripled'). His value line is the sourced tool savings."),
+    ("Faces", "On-camera lines (kitchen, street, couch) are lip-synced with OmniHuman 1.5 from ElevenLabs voice files. B-roll setups (phone frown, café, office call, couch laptop) are Veo 3.1 image-to-video with native room sound and no dialogue."),
+    ("One voice", "Every line, on camera or over B-roll, is rendered from one ElevenLabs voice, so he sounds like the same person all day; the lip-sync is driven by those exact files."),
+    ("Real product", "Agent folder and Brand Brain recordings from the landing page, the chat demo and 4 library-template ads from video 1, the bundle, bonus and swipe-file mockups."),
+    ("Length", "61 s including a 2.5 s end card."),
+]
+D_SHOTS = [
+    ("0.0 to 4.5", "hook", "7:02 AM. Kitchen, morning sun, Jay with a coffee, straight to the lens.", "selfie, chest up", "lip-sync 1", [("Jay", "D2C founders, ecom teams, performance marketers: give me sixty seconds, and I'll save you up to fifty-six hundred dollars a year.", "fast, knowing, a little conspiratorial")], "Timestamp 7:02 AM · audience chips pop on each role · 'Save up to $5,616/yr' sticker on 'save' · label 'Dramatization · AI presenter'", "../c5d/frames/s01.jpg"),
+    ("4.5 to 8.0", "setup", "Same, he raises the mug.", "selfie", "lip-sync 1", [("Jay", "I run paid ads for a candle brand. Here's my day.", "easy, friendly")], "Lower third: Jay · performance marketer · Northlane Candle Co. (fictional)", "../c5d/frames/s01.jpg"),
+    ("8.0 to 12.5", "7:10 AM", "He frowns at his phone at the counter, coffee steaming.", "candid side angle", "Veo B-roll, 6 s", [("Jay (VO)", "Seven a.m. CPA's up overnight. My best ad is tired.", "dry, a little tired")], "Phone card: CPA up 38% · top ad frequency 4.1 · added: one phone notification ding (the alarm must register)", "../c5d/frames/s03.jpg"),
+    ("12.5 to 17.5", "fix", "Screen: the agents folder (cropped), then two agent cards.", "screen + PiP", "voice continues", [("Jay (VO)", "So the Performance Marketing agent reads the export, and Customer Voice pulls the objections from our reviews.", "matter-of-fact")], "Cards: 07 Performance Marketing → change plan · 01 Customer Voice → 'soy candles tunnel'", "../c5d/frames/s04.jpg"),
+    ("17.5 to 22.0", "9:30 AM", "Café window table, typing fast, flat white.", "three-quarter", "Veo B-roll, 6 s", [("Jay (VO)", "Nine thirty. The founder wants four new ads by noon. Old me would open five different tools.", "brisk")], "Timestamp 9:30 AM · subscription cards cascade, counter to $468/mo · added: register tick on the total", "../c5d/frames/s05.jpg"),
+    ("22.0 to 29.0", "fix", "Brand Brain recording, then the Static Ad Generator chat, then the 4 Northlane ads land.", "screen", "video 1 footage", [("Jay (VO)", "Now it's one folder. The Brand Brain already knows our candles, so the Static Ad Generator writes the hooks and the image prompts. Four ads, before my coffee's cold.", "pleased, quick")], "Stack collapses into the bundle · 4 library ads in a 2x2 grid · label 'Demo brand'", "../c5d/frames/s06.jpg"),
+    ("29.0 to 33.5", "12:15 PM", "Sunny sidewalk, Jay walking, phone at arm's length.", "walking selfie", "lip-sync 2", [("Jay", "Twelve fifteen. A competitor just dropped twenty percent off. Competitor Tracker says don't match it. Bundle it.", "amused, conspiratorial")], "Timestamp 12:15 PM · cards: 02 Competitor Tracker → 03 Offers & Bundles 'bundle priced to protect margin'", "../c5d/frames/s07.jpg"),
+    ("33.5 to 38.5", "3:00 PM", "Office with candle stock on the shelves, Jay on a video call with the founder.", "over the shoulder", "Veo B-roll, 6 s", [("Jay (VO)", "Three p.m. Checkout's leaking on mobile. The CRO agent ranks the fixes, and Recovery drafts our email, SMS and WhatsApp flows.", "focused")], "Timestamp 3:00 PM · cards: 09 Landing Pages CRO → ranked fixes · 10 Recovery → 3 channel chips", "../c5d/frames/s08.jpg"),
+    ("38.5 to 42.0", "6:30 PM", "Golden hour, couch, laptop on knees, a lit candle on the table.", "side angle", "Veo B-roll, 4 s", [("Jay (VO)", "Six thirty. I know our real profit, not just ROAS.", "relaxed, satisfied")], "Timestamp 6:30 PM · card: 14 Profit & Attribution → contribution report", "../c5d/frames/s09.jpg"),
+    ("42.0 to 48.0", "value", "7 PM, couch, lamp light, Jay to camera.", "selfie", "lip-sync 3", [("Jay", "Eight single-job AI tools would cost about four sixty-eight a month. This was six hundred and ninety-nine rupees. Once.", "slow on the price, letting it land")], "VS card: $5,616 a year struck through vs ₹699 once · footnote on the tools and your own AI plan · added: one low hit on ₹699", "../c5d/frames/s10.jpg"),
+    ("48.0 to 53.0", "bonuses", "Bonus mockups whip in, then the swipe-file gift; Jay in a corner circle.", "graphic + PiP", "lip-sync 3", [("Jay", "It comes with three bonuses, and add any add-on, and the Meta ads swipe file is free.", "upbeat, a little sly")], "Retention vault / Profit workbooks / 12-month promo calendar · FREE sticker 'with any add-on at checkout'", "../c5d/frames/s11.jpg"),
+    ("53.0 to 58.5", "CTA", "Jay to camera, pointing down.", "selfie", "lip-sync 4", [("Jay", "Sixteen agents, one Brand Brain. If you run D2C, ecom or ads, it's at ecomagents dot ai.", "warm, clear")], "₹699 once sticker · URL pill", "../c5d/frames/s12.jpg"),
+    ("58.5 to 61.0", "end", "End card on ink: bundle box, price, URL.", "graphic", "", [], "16 growth agents · ₹699 once · 3 bonuses · ecomagents.ai", "frames/f12.jpg"),
+]
+D_MUSIC = [
+    ("Bed:", "a warm, catchy indie-pop / lo-fi house groove around 112 to 118 bpm, the kind of track that sits under day-in-the-life vlogs: plucked guitar or keys hook, light percussion. Ducked about 12 dB under his voice. 3 options after the voice is locked; you pick by ear."),
+    ("Shape:", "bright from the first frame; a small lift at each new timestamp (the day moving forward); a breath before the 7 PM value line; the hook returns on the end card."),
+    ("Added sounds (only what must register):", "one phone ding at 7:10 (the overnight alarm), a register tick on $468, one low hit on ₹699. Timestamps, cards and wipes stay silent."),
+]
+D_MG = [
+    ("0.1s", "Timestamp 7:02 AM, top left, then each new time on its scene cut", "each scene"),
+    ("0.2 to 2.4s", "Audience chips, one per role", "each role word"),
+    ("2.9s", "Save up to $5,616/yr sticker", "'save'"),
+    ("4.6s", "Lower third: Jay · performance marketer · Northlane Candle Co. (fictional)", "'candle brand'"),
+    ("8.4s", "Phone card: CPA up 38%, top ad frequency 4.1", "'CPA'"),
+    ("12.6 to 17.4s", "Agent cards: Performance Marketing, Customer Voice", "each agent name"),
+    ("18.8s", "Subscription stack to $468/mo", "'five different tools'"),
+    ("22.1 to 28.9s", "Bundle box, Brand Brain recording, chat demo, 4-ad grid", "'one folder' to 'four ads'"),
+    ("30.0s", "Competitor Tracker → Offers & Bundles", "'bundle it'"),
+    ("34.6s", "Landing Pages CRO → ranked fixes; Recovery → email / SMS / WhatsApp chips", "each channel word"),
+    ("39.0s", "Profit & Attribution → contribution report", "'real profit'"),
+    ("42.2s", "VS card $5,616/yr struck vs ₹699 once, footnote", "'six hundred and ninety-nine'"),
+    ("48.2s", "Bonus mockups, then swipe file + FREE", "'three bonuses' / 'free'"),
+    ("Always", "Small label 'Dramatization · AI presenter', top left under the timestamp", "whole video"),
+]
+D_VOICE = [
+    "One ElevenLabs v3 voice for every line: a young adult US male, different from the video 1 narrator. 2 voice candidates rendered on line 1; you pick.",
+    "On-camera lines (shots 1, 2, 7, 10, 11, 12) are lip-synced to those exact files with OmniHuman 1.5; B-roll lines are the same voice laid over Veo footage, so he sounds like one person all day.",
+    "Product name read as \"EE-kom AY-jent oh-ESS\" where it appears; transcribed twice on the isolated voice.",
+]
+D_CHECKS = [
+    "Dramatization label visible throughout; no personal results claims; the CPA and frequency numbers are the fictional store's story, not product claims.",
+    "Value math sourced (table below), shown as categories, footnoted; swipe file stated as free with an add-on, as on the site.",
+    "Same face and outfit across all 8 setups (frame scan); no readable text or real logos on generated screens and storefronts.",
+    "Lip sync checked on close mouth crops per clip, plus a blink and eye-closure check (the video 3 weak spot).",
+]
+D_HOOKS = [
+    ("D2C founders, ecom teams, performance marketers: give me sixty seconds, and I'll save you up to $5,600 a year.", [10,9,8,8,9,8], "Names all three, a provable value bomb, and a watch-time promise. Winner."),
+    ("If you run a D2C brand, an ecom store or ad accounts, do not buy another AI tool until you see my day.", [10,9,8,8,8,7], "Your 'if you X, Y, Z' shape tied to the vlog. Variant B."),
+    ("I'm a performance marketer, and this ₹699 folder covers the jobs of $5,600 a year in AI tools.", [9,8,7,7,7,7], "Persona-first. Variant C (needs the dramatization label from frame 1)."),
+    ("I'll show you how to make up to $10k a month.", None, "Rejected: a revenue promise. Your FAQ says no results guarantee and Meta restricts earnings claims."),
+]
+SETUPS = [("../c5d/kf/d01_kitchen_hook.jpg", "7:02 AM · kitchen", "on camera, lip-sync"), ("../c5d/kf/d02_kitchen_phone.jpg", "7:10 AM · kitchen, phone", "Veo B-roll"),
+          ("../c5d/kf/d03_cafe_laptop.jpg", "9:30 AM · café", "Veo B-roll"), ("../c5d/kf/d04_street_walk.jpg", "12:15 PM · street", "walking selfie, lip-sync"),
+          ("../c5d/kf/d05_office_call.jpg", "3:00 PM · office call", "Veo B-roll"), ("../c5d/kf/d06_couch_laptop.jpg", "6:30 PM · couch", "Veo B-roll"),
+          ("../c5d/kf/d07_couch_talk.jpg", "7:00 PM · couch", "on camera, lip-sync"), ("../c5d/kf/d08_couch_cta.jpg", "7:00 PM · CTA", "on camera, lip-sync")]
+open(os.path.join(HERE, "c5-day.html"), "w").write(page(
+    "A Day In Ads", "Concept 5 v2 · day in the life of a performance marketer",
+    "Jay, an AI presenter playing a performance marketer at a (fictional) candle brand, takes you through one real working day: each scene is a problem he actually faces and the agent that handles it, then the value math, bonuses, free swipe file and CTA. 61 s, 9:16.",
+    D_BEATS, D_HOW, D_SHOTS, D_MUSIC, D_MG, D_VOICE,
+    [("../c5/kf/cast_jay.jpg", "Jay, about 28", "AI presenter playing a performance marketer. Same outfit all day.")] + SETUPS,
+    "../c5d/contact.jpg", D_CHECKS,
+    [("Jay + 8 setup keyframes (done)", 2.25), ("Voice, 12 lines + 2 candidates", 0.30), ("OmniHuman 1.5 lip-sync, about 29 s of face", 6.00), ("Veo 3.1 B-roll, 4 setups, 22 s", 8.80), ("Re-roll budget", 8.00), ("Music, 3 options", 1.20), ("Transcription checks", 0.10)],
+    "nothing past the keyframes has been spent. Approve the day (or swap a scene), and I record the voice first.",
+    extra=hooks_html(D_HOOKS) + "<h2>The value stack, sourced</h2>" + c5_extra.split("<h2>The value stack, sourced</h2>")[1]))
+print("day ok")
