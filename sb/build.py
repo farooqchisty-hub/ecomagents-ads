@@ -28,6 +28,17 @@ td.t{white-space:nowrap}td img{width:92px;border-radius:8px;display:block}
 ul{padding-left:18px}li{margin:4px 0}.gate{background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:16px 18px;margin:36px 0 0}
 """
 
+def hooks_html(rows):
+    crit=['Relevance','Scroll stop','Virality','Creativity','Catchiness','Uniqueness']
+    out=[]
+    for i,(h,sc,why) in enumerate(rows):
+        if sc is None:
+            out.append(f"<tr><td><s>{e(h)}</s><div class='m'>{e(why)}</div></td>"+"<td></td>"*6+"<td class='m'>rejected</td></tr>")
+        else:
+            st=" style='background:rgba(205,241,59,.25)'" if i==0 else ""
+            out.append(f"<tr{st}><td>{e(h)}<div class='m'>{e(why)}</div></td>"+''.join(f"<td>{x}</td>" for x in sc)+f"<td><b>{sum(sc)}</b>/60</td></tr>")
+    return "<h2>Hooks, scored</h2><p class='m'>Every hook names the viewer and carries a value they can bank on. Winner opens; the next two are A/B variants.</p><div class='tw'><table><tr><th>Hook</th>"+''.join(f'<th>{c}</th>' for c in crit)+"<th>Total</th></tr>"+''.join(out)+"</table></div>"
+
 def page(title, chip, sub, beats, how, shots, music, mg, voice, cast, contact, checks, cost, gate, extra=""):
     bh = "".join(f"<div class='beat'><b>{e(a)}</b>{e(b)}</div>" for a, b in beats)
     hh = "".join(f"<div class='card'><h4>{e(a)}</h4><p>{e(b)}</p></div>" for a, b in how)
@@ -65,7 +76,7 @@ def page(title, chip, sub, beats, how, shots, music, mg, voice, cast, contact, c
 
 # ============================================================== CONCEPT 6
 C6_BEATS = [
-    ("Hook", "Black Friday, two minutes out. A launch control room, sixteen consoles, total silence."),
+    ("Hook", "The launch PA calls the viewer by name: \"Attention D2C founders, ecom teams and performance marketers.\" Super: your whole growth team, for less than one AI tool."),
     ("Setup", "Riley, the founder, is Flight: \"Go, no-go for launch.\""),
     ("Build", "Seven stations call in, each with what their agent got ready: objections, hooks, bundles, checkout, recovery, care, profit."),
     ("Turn", "Walt: the Brand Brain is loaded, every station reads from the same page. Riley: \"Then it's my call.\""),
@@ -83,40 +94,41 @@ C6_HOW = [
 ]
 U = lambda n, d: f"unit {n}, {d}s"
 C6_SHOTS = [
-    ("0.0 to 3.5", "hook", "The dark launch control room, 16 consoles glowing, the big wall screen deep blue.", "wide from the back, slow push in", U("A", 6), [("PA (off)", "T-minus two minutes to Black Friday.", "calm, clinical, NASA flat")], "Countdown clock T-02:00 top band; super 'Black Friday. 2 minutes out.' · room hum", "../c6/kf/k01_room.jpg"),
-    ("3.5 to 7.5", "setup", "Riley at the flight director desk on the top tier, headset on, scanning the room.", "medium close, locked", U("B", 6), [("Riley", "All stations, this is Flight. Go, no-go for launch.", "steady, low, in command")], "Label FLIGHT · RILEY, FOUNDER", "../c6/kf/k02_riley.jpg"),
-    ("7.5 to 10.5", "build", "Mustard-cardigan controller turns to her mic.", "medium, locked", U("C1", 4), [("Customer Voice", "Customer Voice, go. Every ad answers the sizing question.", "crisp, confident")], "Console label CUSTOMER VOICE · tick on 'go'", "../c6/kf/k03_ctrl1.jpg"),
-    ("10.5 to 13.5", "build", "Navy-hoodie controller leans into his mic.", "medium, locked", U("C2", 4), [("Creative", "Creative, go. Twelve hooks, in our customers' own words.", "quick, a little cocky")], "CREATIVE · 12 HOOKS", "../c6/kf/k04_ctrl2.jpg"),
-    ("13.5 to 16.5", "build", "Black-turtleneck controller, a crisp nod.", "medium, locked", U("C3", 4), [("Offers", "Offers, go. Bundle priced to protect margin.", "precise")], "OFFERS · BUNDLE", "../c6/kf/k05_ctrl3.jpg"),
-    ("16.5 to 19.5", "build", "Olive-overshirt controller sits up.", "medium, locked", U("C4", 4), [("Landing Page", "Landing page, go. Checkout friction, fixed.", "matter-of-fact")], "LANDING PAGE · CHECKOUT", "../c6/kf/k06_ctrl4.jpg"),
-    ("19.5 to 22.5", "build", "Burgundy-sweater controller, hand on the mic boom.", "medium, locked", U("C5", 4), [("Recovery", "Recovery, go. Email, SMS and WhatsApp, armed.", "energetic")], "RECOVERY · 3 CHANNELS", "../c6/kf/k07_ctrl5.jpg"),
-    ("22.5 to 25.0", "build", "Denim-jacket controller, a quick thumbs up.", "medium, locked", U("C6", 4), [("Care", "Care, go. Shipping replies, drafted.", "relaxed")], "CARE · REPLIES", "../c6/kf/k08_ctrl6.jpg"),
-    ("25.0 to 28.5", "build", "White-shirt controller, glasses on.", "medium, locked", U("C7", 4), [("Profit", "Profit, go. Break-even ROAS is two point one.", "precise, dry")], "PROFIT · BREAK-EVEN 2.1", "../c6/kf/k09_ctrl7.jpg"),
-    ("28.5 to 34.0", "turn", "Walt at the central console, the printed Brand Brain binder open beside him.", "medium, slow push", U("D", 6), [("Walt", "Brand Brain's loaded. Every station is reading from the same page.", "unhurried, dry warmth")], "BRAND BRAIN · 6 FILES · LOADED", "../c6/kf/k10_walt.jpg"),
-    ("34.0 to 39.5", "turn", "Riley looks over the room, takes a breath.", "medium close, slow push", U("E", 6), [("Riley", "Then it's my call.", "quiet"), ("Riley", "We are go for launch.", "firm, rising")], "none · score drops to a held note", "../c6/kf/k02_riley.jpg"),
-    ("39.5 to 41.5", "payoff", "Her hand presses the lime backlit key.", "extreme close insert", U("F", 4), [], "added: deep key clunk (the decision must register)", "../c6/kf/k11_key.jpg"),
-    ("41.5 to 47.0", "payoff", "The wall screen floods lime, the room silhouetted, people rising.", "wide from the floor", U("G", 6), [("PA (off)", "Three. Two. One. Store is live.", "calm, then a hint of relief")], "STORE LIVE on the wall band · score lifts on 'live'", "../c6/kf/k12_wall.jpg"),
-    ("47.0 to 51.0", "payoff", "Quiet relief, fist bumps; Riley smiles and slips her headset off.", "medium wide", U("H", 4), [], "First order toast 'Halden · order #1' · added: one soft order chime", "../c6/kf/k13_react.jpg"),
-    ("51.0 to 56.0", "button", "The navy-hoodie kid leans to Walt and whispers.", "two-shot, locked", U("I", 6), [("Creative", "What did this crew cost?", "whisper"), ("Walt", "Less than your lunch.", "dry, tiny smile")], "none", "../c6/kf/k14_button.jpg"),
-    ("56.0 to 61.0", "CTA", "End card: the bundle box shot on ink.", "HyperFrames", "graphics", [], "Your launch crew. 16 growth agents · One Brand Brain · ₹699 once · You give the final go · ecomagents.ai", ""),
+    ("0.0 to 5.0", "hook", "The dark launch control room, 16 consoles glowing, the big wall screen deep blue.", "wide from the back, slow push in", U("A", 6), [("PA (off)", "Attention D2C founders, ecom teams and performance marketers. T-minus two minutes to Black Friday.", "calm, clinical, NASA flat, like a real launch call")], "Super, big: 'Your whole growth team. For less than one AI tool.' · countdown T-02:00 top band · room hum", "../c6/kf/k01_room.jpg"),
+    ("5.0 to 9.0", "setup", "Riley at the flight director desk on the top tier, headset on, scanning the room.", "medium close, locked", U("B", 6), [("Riley", "All stations, this is Flight. Go, no-go for launch.", "steady, low, in command")], "Label FLIGHT · RILEY, FOUNDER", "../c6/kf/k02_riley.jpg"),
+    ("9.0 to 12.0", "build", "Mustard-cardigan controller turns to her mic.", "medium, locked", U("C1", 4), [("Customer Voice", "Customer Voice, go. Every ad answers the sizing question.", "crisp, confident")], "Console label CUSTOMER VOICE · tick on 'go'", "../c6/kf/k03_ctrl1.jpg"),
+    ("12.0 to 15.0", "build", "Navy-hoodie controller leans into his mic.", "medium, locked", U("C2", 4), [("Creative", "Creative, go. Twelve hooks, in our customers' own words.", "quick, a little cocky")], "CREATIVE · 12 HOOKS", "../c6/kf/k04_ctrl2.jpg"),
+    ("15.0 to 18.0", "build", "Black-turtleneck controller, a crisp nod.", "medium, locked", U("C3", 4), [("Offers", "Offers, go. Bundle priced to protect margin.", "precise")], "OFFERS · BUNDLE", "../c6/kf/k05_ctrl3.jpg"),
+    ("18.0 to 21.0", "build", "Olive-overshirt controller sits up.", "medium, locked", U("C4", 4), [("Landing Page", "Landing page, go. Checkout friction, fixed.", "matter-of-fact")], "LANDING PAGE · CHECKOUT", "../c6/kf/k06_ctrl4.jpg"),
+    ("21.0 to 24.0", "build", "Burgundy-sweater controller, hand on the mic boom.", "medium, locked", U("C5", 4), [("Recovery", "Recovery, go. Email, SMS and WhatsApp, armed.", "energetic")], "RECOVERY · 3 CHANNELS", "../c6/kf/k07_ctrl5.jpg"),
+    ("24.0 to 26.5", "build", "Denim-jacket controller, a quick thumbs up.", "medium, locked", U("C6", 4), [("Care", "Care, go. Shipping replies, drafted.", "relaxed")], "CARE · REPLIES", "../c6/kf/k08_ctrl6.jpg"),
+    ("26.5 to 30.0", "build", "White-shirt controller, glasses on.", "medium, locked", U("C7", 4), [("Profit", "Profit, go. Break-even ROAS is two point one.", "precise, dry")], "PROFIT · BREAK-EVEN 2.1", "../c6/kf/k09_ctrl7.jpg"),
+    ("30.0 to 35.5", "turn", "Walt at the central console, the printed Brand Brain binder open beside him.", "medium, slow push", U("D", 6), [("Walt", "Brand Brain's loaded. Every station is reading from the same page.", "unhurried, dry warmth")], "BRAND BRAIN · 6 FILES · LOADED", "../c6/kf/k10_walt.jpg"),
+    ("35.5 to 41.0", "turn", "Riley looks over the room, takes a breath.", "medium close, slow push", U("E", 6), [("Riley", "Then it's my call.", "quiet"), ("Riley", "We are go for launch.", "firm, rising")], "none · score drops to a held note", "../c6/kf/k02_riley.jpg"),
+    ("41.0 to 43.0", "payoff", "Her hand presses the lime backlit key.", "extreme close insert", U("F", 4), [], "added: deep key clunk (the decision must register)", "../c6/kf/k11_key.jpg"),
+    ("43.0 to 48.5", "payoff", "The wall screen floods lime, the room silhouetted, people rising.", "wide from the floor", U("G", 6), [("PA (off)", "Three. Two. One. Store is live.", "calm, then a hint of relief")], "STORE LIVE on the wall band · score lifts on 'live'", "../c6/kf/k12_wall.jpg"),
+    ("48.5 to 52.5", "payoff", "Quiet relief, fist bumps; Riley smiles and slips her headset off.", "medium wide", U("H", 4), [], "First order toast 'Halden · order #1' · added: one soft order chime", "../c6/kf/k13_react.jpg"),
+    ("52.5 to 57.5", "button", "The navy-hoodie kid leans to Walt and whispers.", "two-shot, locked", U("I", 6), [("Creative", "What did this crew cost?", "whisper"), ("Walt", "Less than your lunch.", "dry, tiny smile")], "none", "../c6/kf/k14_button.jpg"),
+    ("57.5 to 62.5", "CTA", "End card: the bundle box shot on ink.", "HyperFrames", "graphics", [], "Your launch crew. 16 growth agents · One Brand Brain · ₹699 once · You give the final go · ecomagents.ai", ""),
 ]
 C6_MUSIC = [
-    ("0 to 7.5 s:", "cold open on a low pulse at 120 bpm with a ticking-clock motif, one tick per beat, under the PA line; room hum and console beeps native."),
-    ("7.5 to 28.5 s:", "the poll: each \"go\" adds a layer (kick, then bass, then strings, then hats), so the room's readiness is heard building; the score ducks under every line and swells between them."),
-    ("28.5 to 39.5 s:", "the tick stops on Walt; a suspended held pad; it thins to almost nothing on \"Then it's my call.\""),
-    ("39.5 to 47 s:", "the key clunk lands on silence; a riser under the countdown; on \"live\" the full score opens into a warm, anthemic lift."),
-    ("47 to 61 s:", "the lift resolves to a warm groove under the button, one final hit on the end card that rings out. One continuous ElevenLabs piece composed to the locked cut, in three sections, never restarting."),
+    ("0 to 9 s:", "cold open on a low pulse at 120 bpm with a ticking-clock motif, one tick per beat, under the PA line; room hum and console beeps native."),
+    ("9 to 30 s:", "the poll: each \"go\" adds a layer (kick, then bass, then strings, then hats), so the room's readiness is heard building; the score ducks under every line and swells between them."),
+    ("30 to 41 s:", "the tick stops on Walt; a suspended held pad; it thins to almost nothing on \"Then it's my call.\""),
+    ("41 to 48.5 s:", "the key clunk lands on silence; a riser under the countdown; on \"live\" the full score opens into a warm, anthemic lift."),
+    ("48.5 to 62.5 s:", "the lift resolves to a warm groove under the button, one final hit on the end card that rings out. One continuous ElevenLabs piece composed to the locked cut, in three sections, never restarting."),
     ("Added sounds (only what must register):", "the key clunk and one order chime. Console labels, the countdown and the end card stay silent."),
 ]
 C6_MG = [
-    ("0.2s", "Countdown clock T-02:00, top band, ticking down", "the PA line"),
-    ("3.6s", "Lower label FLIGHT · RILEY, FOUNDER", "her first word"),
-    ("7.6 to 25.1s", "Console label per station, slides in from the left edge, clear of faces", "each station's name"),
-    ("8 to 28s", "Readiness bar 'GO 1/7 … 7/7', top right, one segment lights per 'go'", "each 'go'"),
-    ("28.8s", "BRAND BRAIN · 6 FILES · LOADED chip beside the binder", "'Brand Brain'"),
-    ("43.5s", "STORE LIVE band across the top of the lime wall", "'live'"),
-    ("47.6s", "Order toast 'Halden · order #1'", "the chime"),
-    ("56.0s", "End card", "after the button"),
+    ("0.3s", "Super: Your whole growth team. For less than one AI tool.", "'Attention'"),
+    ("3.2s", "Countdown clock T-02:00, top band, ticking down", "'T-minus'"),
+    ("5.1s", "Lower label FLIGHT · RILEY, FOUNDER", "her first word"),
+    ("9.1 to 26.6s", "Console label per station, slides in from the left edge, clear of faces", "each station's name"),
+    ("9.5 to 29.5s", "Readiness bar 'GO 1/7 … 7/7', top right, one segment lights per 'go'", "each 'go'"),
+    ("30.3s", "BRAND BRAIN · 6 FILES · LOADED chip beside the binder", "'Brand Brain'"),
+    ("45.0s", "STORE LIVE band across the top of the lime wall", "'live'"),
+    ("49.1s", "Order toast 'Halden · order #1'", "the chime"),
+    ("57.5s", "End card", "after the button"),
 ]
 C6_VOICE = [
     "Riley speaks in units B and E. Veo has no voice reference, so I generate 2 takes of each and keep the closest pair; if they still differ, unit E's line is re-voiced with ElevenLabs voice changer matched to B.",
@@ -128,13 +140,13 @@ C6_CHECKS = [
     "Two takes for the speaking units; every take transcribed; \"Brand Brain\", \"ROAS\" and \"WhatsApp\" checked on the isolated voice.",
     "Frame scan every second for real brands on screens, warped hands on the key, faces drifting between the poll shots.",
     "Claims: no results numbers about the product. \"Break-even ROAS is two point one\" is the fictional store's own number. No testimonials.",
-    "Runtime 61 s with the end card, loudness about -14 LUFS, share copy under 30 MB.",
+    "Runtime 62.5 s with the end card, loudness about -14 LUFS, share copy under 30 MB.",
 ]
 
 # ============================================================== CONCEPT 5
 C5_BEATS = [
-    ("Hook", "\"Before you pay for one more AI tool, look at this.\" Eight subscriptions stack up to $468 a month."),
-    ("Who", "D2C founders, ecommerce teams, performance marketers."),
+    ("Hook", "Names the viewer and drops the value bomb: \"D2C founders, ecom teams, performance marketers: give me fifty seconds, and I'll save you up to $5,600 a year.\""),
+    ("Proof of pain", "Eight single-job AI tools stack up to $468 a month."),
     ("What", "Ecom Agent OS: 16 agents inside ChatGPT, Claude or Codex, plus a Brand Brain (real folder recording)."),
     ("What they do", "Animated agent cards, one per job, timed to his words."),
     ("Value", "$5,616 a year in single-job tools vs ₹699 once."),
@@ -150,9 +162,9 @@ C5_HOW = [
     ("Length", "About 57 s, voice-driven."),
 ]
 C5_SHOTS = [
-    ("0.0 to 3.0", "hook", "Jay to camera, hand up like he's stopping you.", "selfie, chest up", "lip-sync 1", [("Jay", "Before you pay for one more AI tool, look at this.", "knowing, a little conspiratorial")], "Subscription cards cascade down the right side, prices in red", "frames/f01.jpg"),
-    ("3.0 to 7.0", "hook", "Same, the stack completes.", "selfie", "lip-sync 1", [("Jay", "Eight single-job AI tools. Four hundred and sixty-eight dollars. Every month.", "deadpan, counting it out")], "Counter ticks to $468/mo · added: register tick on the total", "frames/f01.jpg"),
-    ("7.0 to 11.5", "who", "Jay, gesturing to the chips.", "selfie", "lip-sync 1", [("Jay", "If you run a D2C brand, an ecommerce team or ad accounts, there's a cheaper way.", "direct")], "Audience chips D2C founders / Ecommerce teams / Performance marketers", "frames/f02.jpg"),
+    ("0.0 to 4.5", "hook", "Jay to camera, hand up like he's stopping you; the three audience chips pop as he names each role.", "selfie, chest up", "lip-sync 1", [("Jay", "D2C founders, ecom teams, performance marketers: give me fifty seconds, and I'll save you up to fifty-six hundred dollars a year.", "fast, knowing, a little conspiratorial")], "Audience chips pop on each role · 'Save up to $5,616/yr' sticker slams on 'save'", "frames/f01.jpg"),
+    ("4.5 to 8.5", "hook", "The subscription stack cascades beside him.", "selfie", "lip-sync 1", [("Jay", "Here's what eight single-job AI tools cost. Four hundred and sixty-eight dollars. Every month.", "deadpan, counting it out")], "8 category cards with red prices, counter to $468/mo · added: register tick on the total", "frames/f02.jpg"),
+    ("8.5 to 11.5", "turn", "Jay leans in, gestures to the side.", "selfie", "lip-sync 1", [("Jay", "Now here's what does those jobs instead.", "warm, a small reveal")], "Stack collapses into the bundle box, which lands at 11.5s", "frames/f02.jpg"),
     ("11.5 to 15.0", "what", "Bundle box render, Jay in a circle bottom left.", "graphic + PiP", "lip-sync 2", [("Jay", "Ecom Agent OS. Sixteen growth agents that work inside ChatGPT, Claude or Codex,", "warm, explaining")], "16 agents + a Brand Brain headline", "frames/f03.jpg"),
     ("15.0 to 18.5", "what", "The real Brand Brain folder recording, punch in on the six files.", "screen recording + PiP", "lip-sync 2", [("Jay", "plus a Brand Brain they all read first.", "warm")], "Six ledger chips pop: Products, Audience, Voice, Offers, Claims, Learnings", "frames/f04.jpg"),
     ("18.5 to 25.5", "what they do", "Agent ability cards (acquire lane), each flips on its verb.", "graphic", "voice continues", [("Jay", "They mine your reviews for objections, track competitor ads, write static ads and UGC scripts, read your Meta and Google numbers,", "brisk, listing")], "6 cards: Customer Voice, Competitor Tracker, Static Ad Generator, UGC Video, Performance Marketing, SEO/GEO", "frames/f05.jpg"),
@@ -170,8 +182,9 @@ C5_MUSIC = [
     ("Added sounds (only what must register):", "a register tick when the $468 total lands and one low hit on the ₹699 slam. Card flips, chips and wipes stay silent."),
 ]
 C5_MG = [
-    ("0.3 to 6.5s", "Subscription stack: 8 category cards with red prices cascade, counter to $468/mo", "'one more AI tool' to 'every month'"),
-    ("7.6s", "Audience chips, one per role", "each role word"),
+    ("0.2 to 2.4s", "Audience chips, one per role", "each role word"),
+    ("2.9s", "Save up to $5,616/yr sticker", "'save'"),
+    ("4.6 to 8.4s", "Subscription stack: 8 category cards with red prices cascade, counter to $468/mo", "'eight' to 'every month'"),
     ("11.6s", "16 agents + a Brand Brain headline over the bundle render", "'Ecom Agent OS'"),
     ("15.2s", "Brand Brain recording, 6 ledger chips", "'Brand Brain'"),
     ("18.6 to 32.4s", "12 agent ability cards, 2 sets of 6, each flips on its verb", "each verb"),
@@ -202,7 +215,19 @@ C5_SOURCES = [
     ("Profit analytics $35", "TrueProfit Basic, monthly", "https://apps.shopify.com/trueprofit"),
     ("AI support replies $39", "Tidio Lyro, 50 conversations", "https://www.dragapp.com/blog/tidio-pricing/"),
 ]
-c5_extra = ("<h2>The value stack, sourced</h2><p class='m'>Shown in the ad as categories only. Left out on purpose: creator databases and enterprise creative analytics, where the tool does work the agents can't.</p>"
+C5_HOOKS = [
+    ("D2C founders, ecom teams, performance marketers: give me fifty seconds, and I'll save you up to $5,600 a year.", [10,9,8,8,9,8], "Names all three, a specific value bomb, and a watch-time promise. Winner."),
+    ("If you run a D2C brand, an ecom store or ad accounts, do not buy another AI tool until you see this.", [10,9,8,7,8,7], "Your 'if you X, Y, Z' shape with a warning. Variant B."),
+    ("This ₹699 folder covers the jobs of $5,600 a year in AI tools. D2C, ecom, ad buyers: watch this.", [9,8,7,7,7,7], "Price-first. Variant C."),
+    ("If you're a D2C founder, ecom operator or media buyer, you cannot miss this.", [9,7,6,5,7,5], "Calls the audience but gives no reason to stay."),
+    ("I'll show you how to make up to $10k a month.", None, "Rejected: a revenue promise. Your FAQ says no results guarantee and Meta restricts earnings claims; the savings number is provable instead."),
+]
+C6H = [
+    ("PA: \"Attention D2C founders, ecom teams and performance marketers. T-minus two minutes to Black Friday.\" + super \"Your whole growth team. For less than one AI tool.\"", [10,8,8,9,8,9], "The audience callout is said in-world, by the launch PA, so the film stays a film. ₹699 once is less than the cheapest tool in the stack ($35/mo). Winner."),
+    ("Cold-open super over the room: \"If you run D2C, ecom or ad accounts, this is your Black Friday.\" then the original PA line.", [9,8,7,7,7,7], "Clear, but the callout is a caption, not part of the story. Variant B."),
+    ("Riley first: \"Every D2C founder needs this room on Black Friday.\"", [8,8,7,7,7,7], "Strong line, names only one audience. Variant C."),
+]
+c5_extra = (hooks_html(C5_HOOKS) + "<h2>The value stack, sourced</h2><p class='m'>Shown in the ad as categories only. Left out on purpose: creator databases and enterprise creative analytics, where the tool does work the agents can't.</p>"
             "<div class='tw'><table><tr><th>Category in the ad</th><th>Price basis</th><th>Source</th></tr>"
             + "".join(f"<tr><td>{e(a)}</td><td>{e(b)}</td><td><a href='{c}'>{e(c.split('/')[2])}</a></td></tr>" for a, b, c in C5_SOURCES)
             + "<tr><td><b>Total $468 / month, $5,616 / year</b></td><td>vs ₹699 once (about $8)</td><td></td></tr></table></div>")
@@ -210,14 +235,14 @@ c5_extra = ("<h2>The value stack, sourced</h2><p class='m'>Shown in the ad as ca
 os.makedirs(os.path.join(HERE, "..", "c6"), exist_ok=True)
 open(os.path.join(HERE, "c6.html"), "w").write(page(
     "Go For Launch", "Concept 6 · cinematic harness",
-    "Black Friday, two minutes out. A launch control room runs a go/no-go poll where every station is one of the agents, and the founder gives the final go. 61 s, 9:16, North American cast.",
+    "Black Friday, two minutes out. A launch control room runs a go/no-go poll where every station is one of the agents, and the founder gives the final go. 62.5 s, 9:16, North American cast.",
     C6_BEATS, C6_HOW, C6_SHOTS, C6_MUSIC, C6_MG, C6_VOICE,
     [("../c6/kf/cast_riley.jpg", "Riley, 34", "Founder of Halden Outdoor Co. (fictional), Flight. Speaks in B and E."),
      ("../c6/kf/cast_walt.jpg", "Walt, early 60s", "Operations lead at the central console; the Brand Brain binder. Speaks in D and I."),
      ("../c6/kf/cast_crew.jpg", "The crew", "Seven speaking controllers, one line each; the rest fill the room.")],
     "../c6/contact.jpg", C6_CHECKS,
     [("Cast cards + 14 keyframes (done)", 4.25), ("Veo 3.1, 15 units, 72 s at 720p (estimate $0.40/s)", 28.80), ("Re-roll budget (2 takes on speaking units)", 14.00), ("Score, 3 options", 1.20), ("Transcription checks", 0.20)],
-    "nothing past the keyframes has been spent. Approve, mark changes, or swap a station's line, and production starts with unit B (Riley) as the voice test."))
+    "nothing past the keyframes has been spent. Approve, mark changes, or swap a station's line, and production starts with unit B (Riley) as the voice test.", extra=hooks_html(C6H)))
 open(os.path.join(HERE, "c5.html"), "w").write(page(
     "Before One More Tool", "Concept 5 · AI avatar + value stack",
     "An AI presenter breaks down what eight single-job AI tools cost against a ₹699 one-time bundle, shows what the 16 agents actually do with animated cards over the real folder recordings, then the bonuses and the free swipe file. About 57 s, 9:16.",
