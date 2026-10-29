@@ -35,7 +35,7 @@ if CUT[:4] in ("EA-2", "WS-2"):
     fl.append("".join(f"[v{k}]" for k in range(n)) + f"amix=inputs={n}:normalize=0:dropout_transition=0,apad,atrim=0:{total:.4f}[o]")
     run(["ffmpeg", "-v", "error", "-y", *ins, "-filter_complex", ";".join(fl), "-map", "[o]", "-c:a", "pcm_s24le", vo])
 else:
-    tl = json.load(open(os.path.join(V3, "presenter", "work", "timeline_v1.json")))[CUT]
+    tl = json.load(open(os.path.join(V3, "presenter", "data", "timeline.json")))[CUT]
     join = next(s["out_start"] for s in tl["segs"] if s["kind"] != "hook")
     run(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(V3, "presenter", "work", "mix", f"{CUT}_vo.wav"), "-af", f"apad,atrim=0:{total:.4f}", "-c:a", "pcm_s24le", vo])
 new_total, new_join = total / SPEED, join / SPEED
