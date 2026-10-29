@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Motion Style Test</title><meta name='robots' content='noindex'><style>:root{--bg:#f6f4ef;--card:#fffdf8;--ink:#16181d;--mute:#5d6068;--line:#dedad0;--acc:#2440c9}
+@media (prefers-color-scheme:dark){:root{--bg:#111215;--card:#1a1b1f;--ink:#ecebe7;--mute:#a3a5ab;--line:#2c2d33;--acc:#8ea2ff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,sans-serif}
+.w{max-width:1100px;margin:0 auto;padding:36px 16px 80px}h1{font-size:28px;margin:0 0 6px}h2{font-size:22px;margin:40px 0 4px}.sub{color:var(--mute);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px}
+video{width:100%;aspect-ratio:9/16;border-radius:10px;background:#000;display:block}figcaption{font-size:14px;margin-top:8px}
+figcaption b{display:block}.m{color:var(--mute);font-size:13px}a{color:var(--acc)}.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;font-size:15px}.st img{width:100%;border-radius:10px;border:1px solid var(--line)}</style></head><body><div class='w'>
+<h1>Motion redesign: style test</h1><p class='sub'>29 Oct 2026. Same screenplay, voice and words; new design and motion. The Winning Statics highlight boxes are now measured from the real dashboard tour frame by frame and snapped to each ad card (within 1 px). Approve this look and all 11 cuts get rebuilt with it, at 1.15x with the tech house track.</p>
+<h2>Motion tests at 1.15x (voice only, no music yet)</h2><div class='grid'>
+<figure><video controls playsinline preload='metadata' src='test_ws_115.mp4'></video><figcaption><b>Winning Statics: hook + the library beat with tracked boxes</b><span class='m'><a href='test_ws_115.mp4' download>download</a></span></figcaption></figure>
+<figure><video controls playsinline preload='metadata' src='test_ea_115.mp4'></video><figcaption><b>Ecom Agent OS: the ChatGPT ad agent beat</b><span class='m'><a href='test_ea_115.mp4' download>download</a></span></figcaption></figure>
+</div><h2>Style frames</h2><div class='grid st'>
+<figure><img loading='lazy' src='style/01_ws_hook.png'><figcaption>ws hook</figcaption></figure>
+<figure><img loading='lazy' src='style/02_ws_dashboard_boxes.png'><figcaption>ws dashboard boxes</figcaption></figure>
+<figure><img loading='lazy' src='style/03_ws_count_chips.png'><figcaption>ws count chips</figcaption></figure>
+<figure><img loading='lazy' src='style/04_ws_offer_1_per_ad_5x.png'><figcaption>ws offer 1 per ad 5x</figcaption></figure>
+<figure><img loading='lazy' src='style/05_ea_ad_agent_angles.png'><figcaption>ea ad agent angles</figcaption></figure>
+<figure><img loading='lazy' src='style/06_ea_ad_agent_ad_lands.png'><figcaption>ea ad agent ad lands</figcaption></figure>
+<figure><img loading='lazy' src='style/07_ea_retention_flow.png'><figcaption>ea retention flow</figcaption></figure>
+<figure><img loading='lazy' src='style/08_ws_end_card.png'><figcaption>ws end card</figcaption></figure>
+</div><h2>Box alignment check (stills every 0.5 s)</h2><figure class='st'><img loading='lazy' src='qa/boxes/box_crops.jpg'></figure>
+<p class='m' style='margin-top:30px'><a href='../v4/final/'>Current 11 cuts at 1.15x</a></p></div></body></html>
