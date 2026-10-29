@@ -1,0 +1,1968 @@
+{
+ "ea2_b1": {
+  "text": "It's called Ecom Agent OS. 16 agent packages, each with its own skills, all sharing one brand brain. So every agent already knows your products and your voice.",
+  "chunks": [
+   {
+    "text": " It's",
+    "timestamp": [
+     0.171,
+     0.292
+    ]
+   },
+   {
+    "text": " called",
+    "timestamp": [
+     0.332,
+     0.593
+    ]
+   },
+   {
+    "text": " Ecom",
+    "timestamp": [
+     0.773,
+     1.195
+    ]
+   },
+   {
+    "text": " Agent",
+    "timestamp": [
+     1.335,
+     1.616
+    ]
+   },
+   {
+    "text": " OS.",
+    "timestamp": [
+     1.797,
+     2.158
+    ]
+   },
+   {
+    "text": " 16",
+    "timestamp": [
+     2.68,
+     3.141
+    ]
+   },
+   {
+    "text": " agent",
+    "timestamp": [
+     3.262,
+     3.502
+    ]
+   },
+   {
+    "text": " packages,",
+    "timestamp": [
+     3.542,
+     4.044
+    ]
+   },
+   {
+    "text": " each",
+    "timestamp": [
+     4.486,
+     4.626
+    ]
+   },
+   {
+    "text": " with",
+    "timestamp": [
+     4.666,
+     4.786
+    ]
+   },
+   {
+    "text": " its",
+    "timestamp": [
+     4.847,
+     4.947
+    ]
+   },
+   {
+    "text": " own",
+    "timestamp": [
+     5.007,
+     5.148
+    ]
+   },
+   {
+    "text": " skills,",
+    "timestamp": [
+     5.208,
+     5.629
+    ]
+   },
+   {
+    "text": " all",
+    "timestamp": [
+     6.171,
+     6.311
+    ]
+   },
+   {
+    "text": " sharing",
+    "timestamp": [
+     6.372,
+     6.733
+    ]
+   },
+   {
+    "text": " one",
+    "timestamp": [
+     6.913,
+     7.074
+    ]
+   },
+   {
+    "text": " brand",
+    "timestamp": [
+     7.154,
+     7.556
+    ]
+   },
+   {
+    "text": " brain.",
+    "timestamp": [
+     7.616,
+     8.017
+    ]
+   },
+   {
+    "text": " So",
+    "timestamp": [
+     8.519,
+     8.639
+    ]
+   },
+   {
+    "text": " every",
+    "timestamp": [
+     8.699,
+     8.88
+    ]
+   },
+   {
+    "text": " agent",
+    "timestamp": [
+     8.96,
+     9.201
+    ]
+   },
+   {
+    "text": " already",
+    "timestamp": [
+     9.261,
+     9.562
+    ]
+   },
+   {
+    "text": " knows",
+    "timestamp": [
+     9.622,
+     9.883
+    ]
+   },
+   {
+    "text": " your",
+    "timestamp": [
+     9.923,
+     10.064
+    ]
+   },
+   {
+    "text": " products",
+    "timestamp": [
+     10.104,
+     10.545
+    ]
+   },
+   {
+    "text": " and",
+    "timestamp": [
+     10.706,
+     10.806
+    ]
+   },
+   {
+    "text": " your",
+    "timestamp": [
+     10.846,
+     10.987
+    ]
+   },
+   {
+    "text": " voice.",
+    "timestamp": [
+     11.027,
+     11.348
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ea2_b2": {
+  "text": "Here's the ad agent. You paste a product link. It reads the page, writes three angles, and drafts the ad you pick.",
+  "chunks": [
+   {
+    "text": " Here's",
+    "timestamp": [
+     0.151,
+     0.432
+    ]
+   },
+   {
+    "text": " the",
+    "timestamp": [
+     0.452,
+     0.553
+    ]
+   },
+   {
+    "text": " ad",
+    "timestamp": [
+     0.653,
+     0.813
+    ]
+   },
+   {
+    "text": " agent.",
+    "timestamp": [
+     0.873,
+     1.174
+    ]
+   },
+   {
+    "text": " You",
+    "timestamp": [
+     1.756,
+     1.897
+    ]
+   },
+   {
+    "text": " paste",
+    "timestamp": [
+     1.917,
+     2.177
+    ]
+   },
+   {
+    "text": " a",
+    "timestamp": [
+     2.217,
+     2.258
+    ]
+   },
+   {
+    "text": " product",
+    "timestamp": [
+     2.298,
+     2.639
+    ]
+   },
+   {
+    "text": " link.",
+    "timestamp": [
+     2.679,
+     2.899
+    ]
+   },
+   {
+    "text": " It",
+    "timestamp": [
+     3.261,
+     3.321
+    ]
+   },
+   {
+    "text": " reads",
+    "timestamp": [
+     3.361,
+     3.602
+    ]
+   },
+   {
+    "text": " the",
+    "timestamp": [
+     3.642,
+     3.722
+    ]
+   },
+   {
+    "text": " page,",
+    "timestamp": [
+     3.762,
+     4.123
+    ]
+   },
+   {
+    "text": " writes",
+    "timestamp": [
+     4.464,
+     4.705
+    ]
+   },
+   {
+    "text": " three",
+    "timestamp": [
+     4.765,
+     4.986
+    ]
+   },
+   {
+    "text": " angles,",
+    "timestamp": [
+     5.086,
+     5.407
+    ]
+   },
+   {
+    "text": " and",
+    "timestamp": [
+     5.848,
+     5.928
+    ]
+   },
+   {
+    "text": " drafts",
+    "timestamp": [
+     5.969,
+     6.29
+    ]
+   },
+   {
+    "text": " the",
+    "timestamp": [
+     6.35,
+     6.43
+    ]
+   },
+   {
+    "text": " ad",
+    "timestamp": [
+     6.53,
+     6.671
+    ]
+   },
+   {
+    "text": " you",
+    "timestamp": [
+     6.691,
+     6.831
+    ]
+   },
+   {
+    "text": " pick.",
+    "timestamp": [
+     6.871,
+     7.132
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ea2_b3": {
+  "text": "Here's the retention agent. It maps your welcome series, cart recovery, post-purchase and win-back emails, written in your voice and ready for your email platform.",
+  "chunks": [
+   {
+    "text": " Here's",
+    "timestamp": [
+     0.111,
+     0.412
+    ]
+   },
+   {
+    "text": " the",
+    "timestamp": [
+     0.452,
+     0.553
+    ]
+   },
+   {
+    "text": " retention",
+    "timestamp": [
+     0.593,
+     1.074
+    ]
+   },
+   {
+    "text": " agent.",
+    "timestamp": [
+     1.134,
+     1.435
+    ]
+   },
+   {
+    "text": " It",
+    "timestamp": [
+     2.097,
+     2.157
+    ]
+   },
+   {
+    "text": " maps",
+    "timestamp": [
+     2.218,
+     2.478
+    ]
+   },
+   {
+    "text": " your",
+    "timestamp": [
+     2.518,
+     2.659
+    ]
+   },
+   {
+    "text": " welcome",
+    "timestamp": [
+     2.699,
+     3.08
+    ]
+   },
+   {
+    "text": " series,",
+    "timestamp": [
+     3.12,
+     3.542
+    ]
+   },
+   {
+    "text": " cart",
+    "timestamp": [
+     3.943,
+     4.163
+    ]
+   },
+   {
+    "text": " recovery,",
+    "timestamp": [
+     4.204,
+     4.705
+    ]
+   },
+   {
+    "text": " post-purchase",
+    "timestamp": [
+     5.227,
+     5.949
+    ]
+   },
+   {
+    "text": " and",
+    "timestamp": [
+     6.029,
+     6.109
+    ]
+   },
+   {
+    "text": " win-back",
+    "timestamp": [
+     6.169,
+     6.671
+    ]
+   },
+   {
+    "text": " emails,",
+    "timestamp": [
+     6.791,
+     7.233
+    ]
+   },
+   {
+    "text": " written",
+    "timestamp": [
+     7.774,
+     8.035
+    ]
+   },
+   {
+    "text": " in",
+    "timestamp": [
+     8.075,
+     8.115
+    ]
+   },
+   {
+    "text": " your",
+    "timestamp": [
+     8.155,
+     8.296
+    ]
+   },
+   {
+    "text": " voice",
+    "timestamp": [
+     8.336,
+     8.657
+    ]
+   },
+   {
+    "text": " and",
+    "timestamp": [
+     8.737,
+     8.817
+    ]
+   },
+   {
+    "text": " ready",
+    "timestamp": [
+     8.858,
+     9.078
+    ]
+   },
+   {
+    "text": " for",
+    "timestamp": [
+     9.118,
+     9.219
+    ]
+   },
+   {
+    "text": " your",
+    "timestamp": [
+     9.239,
+     9.379
+    ]
+   },
+   {
+    "text": " email",
+    "timestamp": [
+     9.459,
+     9.72
+    ]
+   },
+   {
+    "text": " platform.",
+    "timestamp": [
+     9.78,
+     10.302
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ea2_b4": {
+  "text": "The other 14 handle research, offers, product pages, paid media, and profit. Nothing goes live until you approve it.",
+  "chunks": [
+   {
+    "text": " The",
+    "timestamp": [
+     0.131,
+     0.232
+    ]
+   },
+   {
+    "text": " other",
+    "timestamp": [
+     0.272,
+     0.453
+    ]
+   },
+   {
+    "text": " 14",
+    "timestamp": [
+     0.513,
+     1.096
+    ]
+   },
+   {
+    "text": " handle",
+    "timestamp": [
+     1.156,
+     1.478
+    ]
+   },
+   {
+    "text": " research,",
+    "timestamp": [
+     1.538,
+     2.02
+    ]
+   },
+   {
+    "text": " offers,",
+    "timestamp": [
+     2.362,
+     2.784
+    ]
+   },
+   {
+    "text": " product",
+    "timestamp": [
+     3.065,
+     3.407
+    ]
+   },
+   {
+    "text": " pages,",
+    "timestamp": [
+     3.447,
+     3.869
+    ]
+   },
+   {
+    "text": " paid",
+    "timestamp": [
+     4.472,
+     4.733
+    ]
+   },
+   {
+    "text": " media,",
+    "timestamp": [
+     4.813,
+     5.195
+    ]
+   },
+   {
+    "text": " and",
+    "timestamp": [
+     5.436,
+     5.536
+    ]
+   },
+   {
+    "text": " profit.",
+    "timestamp": [
+     5.617,
+     6.059
+    ]
+   },
+   {
+    "text": " Nothing",
+    "timestamp": [
+     6.883,
+     7.124
+    ]
+   },
+   {
+    "text": " goes",
+    "timestamp": [
+     7.164,
+     7.345
+    ]
+   },
+   {
+    "text": " live",
+    "timestamp": [
+     7.445,
+     7.727
+    ]
+   },
+   {
+    "text": " until",
+    "timestamp": [
+     7.767,
+     7.988
+    ]
+   },
+   {
+    "text": " you",
+    "timestamp": [
+     8.028,
+     8.149
+    ]
+   },
+   {
+    "text": " approve",
+    "timestamp": [
+     8.189,
+     8.51
+    ]
+   },
+   {
+    "text": " it.",
+    "timestamp": [
+     8.55,
+     8.611
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ea2_b5": {
+  "text": "one payment of 699 rupees with three free bonuses included. The link is just below.",
+  "chunks": [
+   {
+    "text": " one",
+    "timestamp": [
+     0.292,
+     0.413
+    ]
+   },
+   {
+    "text": " payment",
+    "timestamp": [
+     0.493,
+     0.835
+    ]
+   },
+   {
+    "text": " of",
+    "timestamp": [
+     0.855,
+     0.915
+    ]
+   },
+   {
+    "text": " 699",
+    "timestamp": [
+     0.935,
+     1.578
+    ]
+   },
+   {
+    "text": " rupees",
+    "timestamp": [
+     2.482,
+     2.924
+    ]
+   },
+   {
+    "text": " with",
+    "timestamp": [
+     3.446,
+     3.607
+    ]
+   },
+   {
+    "text": " three",
+    "timestamp": [
+     3.688,
+     3.989
+    ]
+   },
+   {
+    "text": " free",
+    "timestamp": [
+     4.13,
+     4.351
+    ]
+   },
+   {
+    "text": " bonuses",
+    "timestamp": [
+     4.411,
+     4.873
+    ]
+   },
+   {
+    "text": " included.",
+    "timestamp": [
+     4.953,
+     5.395
+    ]
+   },
+   {
+    "text": " The",
+    "timestamp": [
+     6.099,
+     6.199
+    ]
+   },
+   {
+    "text": " link",
+    "timestamp": [
+     6.239,
+     6.46
+    ]
+   },
+   {
+    "text": " is",
+    "timestamp": [
+     6.541,
+     6.621
+    ]
+   },
+   {
+    "text": " just",
+    "timestamp": [
+     6.681,
+     6.902
+    ]
+   },
+   {
+    "text": " below.",
+    "timestamp": [
+     6.962,
+     7.264
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ea2_h2": {
+  "text": "Agencies charge a monthly retainer for work that 16 ChatGPT agents can now draft for you.",
+  "chunks": [
+   {
+    "text": " Agencies",
+    "timestamp": [
+     0.252,
+     0.734
+    ]
+   },
+   {
+    "text": " charge",
+    "timestamp": [
+     0.794,
+     1.196
+    ]
+   },
+   {
+    "text": " a",
+    "timestamp": [
+     1.296,
+     1.337
+    ]
+   },
+   {
+    "text": " monthly",
+    "timestamp": [
+     1.397,
+     1.758
+    ]
+   },
+   {
+    "text": " retainer",
+    "timestamp": [
+     1.819,
+     2.281
+    ]
+   },
+   {
+    "text": " for",
+    "timestamp": [
+     2.341,
+     2.482
+    ]
+   },
+   {
+    "text": " work",
+    "timestamp": [
+     2.542,
+     2.763
+    ]
+   },
+   {
+    "text": " that",
+    "timestamp": [
+     2.823,
+     2.984
+    ]
+   },
+   {
+    "text": " 16",
+    "timestamp": [
+     3.165,
+     3.607
+    ]
+   },
+   {
+    "text": " ChatGPT",
+    "timestamp": [
+     3.707,
+     4.611
+    ]
+   },
+   {
+    "text": " agents",
+    "timestamp": [
+     4.731,
+     5.033
+    ]
+   },
+   {
+    "text": " can",
+    "timestamp": [
+     5.073,
+     5.213
+    ]
+   },
+   {
+    "text": " now",
+    "timestamp": [
+     5.254,
+     5.394
+    ]
+   },
+   {
+    "text": " draft",
+    "timestamp": [
+     5.455,
+     5.776
+    ]
+   },
+   {
+    "text": " for",
+    "timestamp": [
+     5.836,
+     6.037
+    ]
+   },
+   {
+    "text": " you.",
+    "timestamp": [
+     6.097,
+     6.238
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ea2_h4": {
+  "text": "16 AI agents for your store, one payment of 699 rupees and no monthly fee.",
+  "chunks": [
+   {
+    "text": " 16",
+    "timestamp": [
+     0.251,
+     0.692
+    ]
+   },
+   {
+    "text": " AI",
+    "timestamp": [
+     0.832,
+     1.133
+    ]
+   },
+   {
+    "text": " agents",
+    "timestamp": [
+     1.293,
+     1.594
+    ]
+   },
+   {
+    "text": " for",
+    "timestamp": [
+     1.674,
+     1.794
+    ]
+   },
+   {
+    "text": " your",
+    "timestamp": [
+     1.814,
+     1.954
+    ]
+   },
+   {
+    "text": " store,",
+    "timestamp": [
+     1.994,
+     2.335
+    ]
+   },
+   {
+    "text": " one",
+    "timestamp": [
+     2.996,
+     3.116
+    ]
+   },
+   {
+    "text": " payment",
+    "timestamp": [
+     3.176,
+     3.557
+    ]
+   },
+   {
+    "text": " of",
+    "timestamp": [
+     3.617,
+     3.677
+    ]
+   },
+   {
+    "text": " 699",
+    "timestamp": [
+     3.697,
+     4.519
+    ]
+   },
+   {
+    "text": " rupees",
+    "timestamp": [
+     4.559,
+     4.96
+    ]
+   },
+   {
+    "text": " and",
+    "timestamp": [
+     5.48,
+     5.601
+    ]
+   },
+   {
+    "text": " no",
+    "timestamp": [
+     5.701,
+     5.881
+    ]
+   },
+   {
+    "text": " monthly",
+    "timestamp": [
+     5.941,
+     6.322
+    ]
+   },
+   {
+    "text": " fee.",
+    "timestamp": [
+     6.382,
+     6.622
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ea2_h5": {
+  "text": "If you're paying for a separate AI tool for every marketing job, there's a much simpler way.",
+  "chunks": [
+   {
+    "text": " If",
+    "timestamp": [
+     0.091,
+     0.132
+    ]
+   },
+   {
+    "text": " you're",
+    "timestamp": [
+     0.152,
+     0.333
+    ]
+   },
+   {
+    "text": " paying",
+    "timestamp": [
+     0.353,
+     0.595
+    ]
+   },
+   {
+    "text": " for",
+    "timestamp": [
+     0.635,
+     0.756
+    ]
+   },
+   {
+    "text": " a",
+    "timestamp": [
+     0.796,
+     0.837
+    ]
+   },
+   {
+    "text": " separate",
+    "timestamp": [
+     0.917,
+     1.3
+    ]
+   },
+   {
+    "text": " AI",
+    "timestamp": [
+     1.441,
+     1.743
+    ]
+   },
+   {
+    "text": " tool",
+    "timestamp": [
+     1.823,
+     2.166
+    ]
+   },
+   {
+    "text": " for",
+    "timestamp": [
+     2.246,
+     2.387
+    ]
+   },
+   {
+    "text": " every",
+    "timestamp": [
+     2.568,
+     2.79
+    ]
+   },
+   {
+    "text": " marketing",
+    "timestamp": [
+     2.871,
+     3.314
+    ]
+   },
+   {
+    "text": " job,",
+    "timestamp": [
+     3.374,
+     3.716
+    ]
+   },
+   {
+    "text": " there's",
+    "timestamp": [
+     4.28,
+     4.462
+    ]
+   },
+   {
+    "text": " a",
+    "timestamp": [
+     4.482,
+     4.522
+    ]
+   },
+   {
+    "text": " much",
+    "timestamp": [
+     4.562,
+     4.743
+    ]
+   },
+   {
+    "text": " simpler",
+    "timestamp": [
+     4.864,
+     5.247
+    ]
+   },
+   {
+    "text": " way.",
+    "timestamp": [
+     5.307,
+     5.529
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ws2_b1": {
+  "text": "It's called Winning Statics. 1,169 winning ads, picked from thousands of ads run by more than 5,000 stores, many promoted by creators, all rebuilt with proven creative frameworks.",
+  "chunks": [
+   {
+    "text": " It's",
+    "timestamp": [
+     0.111,
+     0.211
+    ]
+   },
+   {
+    "text": " called",
+    "timestamp": [
+     0.251,
+     0.512
+    ]
+   },
+   {
+    "text": " Winning",
+    "timestamp": [
+     0.592,
+     0.932
+    ]
+   },
+   {
+    "text": " Statics.",
+    "timestamp": [
+     1.012,
+     2.655
+    ]
+   },
+   {
+    "text": " 1,169",
+    "timestamp": [
+     2.775,
+     3.836
+    ]
+   },
+   {
+    "text": " winning",
+    "timestamp": [
+     3.896,
+     4.177
+    ]
+   },
+   {
+    "text": " ads,",
+    "timestamp": [
+     4.337,
+     4.557
+    ]
+   },
+   {
+    "text": " picked",
+    "timestamp": [
+     5.078,
+     5.278
+    ]
+   },
+   {
+    "text": " from",
+    "timestamp": [
+     5.338,
+     5.478
+    ]
+   },
+   {
+    "text": " thousands",
+    "timestamp": [
+     5.599,
+     6.079
+    ]
+   },
+   {
+    "text": " of",
+    "timestamp": [
+     6.139,
+     6.179
+    ]
+   },
+   {
+    "text": " ads",
+    "timestamp": [
+     6.32,
+     6.52
+    ]
+   },
+   {
+    "text": " run",
+    "timestamp": [
+     6.6,
+     6.76
+    ]
+   },
+   {
+    "text": " by",
+    "timestamp": [
+     6.8,
+     6.94
+    ]
+   },
+   {
+    "text": " more",
+    "timestamp": [
+     7,
+     7.141
+    ]
+   },
+   {
+    "text": " than",
+    "timestamp": [
+     7.181,
+     7.321
+    ]
+   },
+   {
+    "text": " 5,000",
+    "timestamp": [
+     7.421,
+     8.142
+    ]
+   },
+   {
+    "text": " stores,",
+    "timestamp": [
+     8.202,
+     8.643
+    ]
+   },
+   {
+    "text": " many",
+    "timestamp": [
+     9.143,
+     9.384
+    ]
+   },
+   {
+    "text": " promoted",
+    "timestamp": [
+     9.444,
+     9.844
+    ]
+   },
+   {
+    "text": " by",
+    "timestamp": [
+     9.884,
+     10.025
+    ]
+   },
+   {
+    "text": " creators,",
+    "timestamp": [
+     10.105,
+     10.625
+    ]
+   },
+   {
+    "text": " all",
+    "timestamp": [
+     11.306,
+     11.447
+    ]
+   },
+   {
+    "text": " rebuilt",
+    "timestamp": [
+     11.527,
+     11.987
+    ]
+   },
+   {
+    "text": " with",
+    "timestamp": [
+     12.067,
+     12.208
+    ]
+   },
+   {
+    "text": " proven",
+    "timestamp": [
+     12.308,
+     12.688
+    ]
+   },
+   {
+    "text": " creative",
+    "timestamp": [
+     12.768,
+     13.209
+    ]
+   },
+   {
+    "text": " frameworks.",
+    "timestamp": [
+     13.269,
+     13.87
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ws2_b3": {
+  "text": "What comes back is that winning ad built around your product and ready to run in days, not weeks.",
+  "chunks": [
+   {
+    "text": " What",
+    "timestamp": [
+     0.071,
+     0.212
+    ]
+   },
+   {
+    "text": " comes",
+    "timestamp": [
+     0.272,
+     0.514
+    ]
+   },
+   {
+    "text": " back",
+    "timestamp": [
+     0.574,
+     0.795
+    ]
+   },
+   {
+    "text": " is",
+    "timestamp": [
+     0.876,
+     0.956
+    ]
+   },
+   {
+    "text": " that",
+    "timestamp": [
+     1.016,
+     1.197
+    ]
+   },
+   {
+    "text": " winning",
+    "timestamp": [
+     1.278,
+     1.62
+    ]
+   },
+   {
+    "text": " ad",
+    "timestamp": [
+     1.901,
+     2.122
+    ]
+   },
+   {
+    "text": " built",
+    "timestamp": [
+     2.524,
+     2.766
+    ]
+   },
+   {
+    "text": " around",
+    "timestamp": [
+     2.846,
+     3.107
+    ]
+   },
+   {
+    "text": " your",
+    "timestamp": [
+     3.148,
+     3.288
+    ]
+   },
+   {
+    "text": " product",
+    "timestamp": [
+     3.349,
+     3.791
+    ]
+   },
+   {
+    "text": " and",
+    "timestamp": [
+     4.153,
+     4.254
+    ]
+   },
+   {
+    "text": " ready",
+    "timestamp": [
+     4.294,
+     4.495
+    ]
+   },
+   {
+    "text": " to",
+    "timestamp": [
+     4.535,
+     4.616
+    ]
+   },
+   {
+    "text": " run",
+    "timestamp": [
+     4.676,
+     4.837
+    ]
+   },
+   {
+    "text": " in",
+    "timestamp": [
+     4.897,
+     4.978
+    ]
+   },
+   {
+    "text": " days,",
+    "timestamp": [
+     5.038,
+     5.52
+    ]
+   },
+   {
+    "text": " not",
+    "timestamp": [
+     6.043,
+     6.224
+    ]
+   },
+   {
+    "text": " weeks.",
+    "timestamp": [
+     6.285,
+     6.606
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ws2_b2": {
+  "text": "Find one in your category, copy its prompt, and paste it into ChatGPT with your product link.",
+  "chunks": [
+   {
+    "text": " Find",
+    "timestamp": [
+     0.172,
+     0.433
+    ]
+   },
+   {
+    "text": " one",
+    "timestamp": [
+     0.554,
+     0.655
+    ]
+   },
+   {
+    "text": " in",
+    "timestamp": [
+     0.675,
+     0.735
+    ]
+   },
+   {
+    "text": " your",
+    "timestamp": [
+     0.775,
+     0.896
+    ]
+   },
+   {
+    "text": " category,",
+    "timestamp": [
+     0.936,
+     1.52
+    ]
+   },
+   {
+    "text": " copy",
+    "timestamp": [
+     1.882,
+     2.204
+    ]
+   },
+   {
+    "text": " its",
+    "timestamp": [
+     2.244,
+     2.364
+    ]
+   },
+   {
+    "text": " prompt,",
+    "timestamp": [
+     2.425,
+     2.787
+    ]
+   },
+   {
+    "text": " and",
+    "timestamp": [
+     3.209,
+     3.31
+    ]
+   },
+   {
+    "text": " paste",
+    "timestamp": [
+     3.39,
+     3.692
+    ]
+   },
+   {
+    "text": " it",
+    "timestamp": [
+     3.732,
+     3.793
+    ]
+   },
+   {
+    "text": " into",
+    "timestamp": [
+     3.933,
+     4.115
+    ]
+   },
+   {
+    "text": " ChatGPT",
+    "timestamp": [
+     4.175,
+     5.08
+    ]
+   },
+   {
+    "text": " with",
+    "timestamp": [
+     5.12,
+     5.261
+    ]
+   },
+   {
+    "text": " your",
+    "timestamp": [
+     5.281,
+     5.422
+    ]
+   },
+   {
+    "text": " product",
+    "timestamp": [
+     5.462,
+     5.824
+    ]
+   },
+   {
+    "text": " link.",
+    "timestamp": [
+     5.885,
+     6.106
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ws2_b4": {
+  "text": "Each one costs one rupee. They're proven to reach five times return on ad spend and four bonuses come free.",
+  "chunks": [
+   {
+    "text": " Each",
+    "timestamp": [
+     0.131,
+     0.292
+    ]
+   },
+   {
+    "text": " one",
+    "timestamp": [
+     0.412,
+     0.533
+    ]
+   },
+   {
+    "text": " costs",
+    "timestamp": [
+     0.633,
+     1.115
+    ]
+   },
+   {
+    "text": " one",
+    "timestamp": [
+     1.356,
+     1.477
+    ]
+   },
+   {
+    "text": " rupee.",
+    "timestamp": [
+     1.557,
+     1.918
+    ]
+   },
+   {
+    "text": " They're",
+    "timestamp": [
+     2.38,
+     2.561
+    ]
+   },
+   {
+    "text": " proven",
+    "timestamp": [
+     2.601,
+     2.922
+    ]
+   },
+   {
+    "text": " to",
+    "timestamp": [
+     2.962,
+     3.023
+    ]
+   },
+   {
+    "text": " reach",
+    "timestamp": [
+     3.083,
+     3.284
+    ]
+   },
+   {
+    "text": " five",
+    "timestamp": [
+     3.384,
+     3.665
+    ]
+   },
+   {
+    "text": " times",
+    "timestamp": [
+     3.725,
+     4.026
+    ]
+   },
+   {
+    "text": " return",
+    "timestamp": [
+     4.107,
+     4.468
+    ]
+   },
+   {
+    "text": " on",
+    "timestamp": [
+     4.548,
+     4.629
+    ]
+   },
+   {
+    "text": " ad",
+    "timestamp": [
+     4.83,
+     4.99
+    ]
+   },
+   {
+    "text": " spend",
+    "timestamp": [
+     5.01,
+     5.392
+    ]
+   },
+   {
+    "text": " and",
+    "timestamp": [
+     5.833,
+     5.934
+    ]
+   },
+   {
+    "text": " four",
+    "timestamp": [
+     6.014,
+     6.235
+    ]
+   },
+   {
+    "text": " bonuses",
+    "timestamp": [
+     6.275,
+     6.817
+    ]
+   },
+   {
+    "text": " come",
+    "timestamp": [
+     6.898,
+     7.118
+    ]
+   },
+   {
+    "text": " free.",
+    "timestamp": [
+     7.199,
+     7.42
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ws2_b5": {
+  "text": "The link is just below.",
+  "chunks": [
+   {
+    "text": " The",
+    "timestamp": [
+     0.114,
+     0.217
+    ]
+   },
+   {
+    "text": " link",
+    "timestamp": [
+     0.238,
+     0.444
+    ]
+   },
+   {
+    "text": " is",
+    "timestamp": [
+     0.506,
+     0.589
+    ]
+   },
+   {
+    "text": " just",
+    "timestamp": [
+     0.63,
+     0.857
+    ]
+   },
+   {
+    "text": " below.",
+    "timestamp": [
+     0.919,
+     1.208
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ws2_h1": {
+  "text": "Steal these 1169 winning ads. They cost one rupee each.",
+  "chunks": [
+   {
+    "text": " Steal",
+    "timestamp": [
+     0.051,
+     0.352
+    ]
+   },
+   {
+    "text": " these",
+    "timestamp": [
+     0.392,
+     0.593
+    ]
+   },
+   {
+    "text": " 1169",
+    "timestamp": [
+     0.613,
+     2.158
+    ]
+   },
+   {
+    "text": " winning",
+    "timestamp": [
+     2.198,
+     2.459
+    ]
+   },
+   {
+    "text": " ads.",
+    "timestamp": [
+     2.619,
+     2.88
+    ]
+   },
+   {
+    "text": " They",
+    "timestamp": [
+     3.502,
+     3.622
+    ]
+   },
+   {
+    "text": " cost",
+    "timestamp": [
+     3.642,
+     3.943
+    ]
+   },
+   {
+    "text": " one",
+    "timestamp": [
+     4.104,
+     4.224
+    ]
+   },
+   {
+    "text": " rupee",
+    "timestamp": [
+     4.284,
+     4.666
+    ]
+   },
+   {
+    "text": " each.",
+    "timestamp": [
+     4.826,
+     5.007
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ },
+ "ws2_h4": {
+  "text": "Before you make another ad from scratch, take a look at this.",
+  "chunks": [
+   {
+    "text": " Before",
+    "timestamp": [
+     0.132,
+     0.415
+    ]
+   },
+   {
+    "text": " you",
+    "timestamp": [
+     0.455,
+     0.577
+    ]
+   },
+   {
+    "text": " make",
+    "timestamp": [
+     0.597,
+     0.759
+    ]
+   },
+   {
+    "text": " another",
+    "timestamp": [
+     0.819,
+     1.062
+    ]
+   },
+   {
+    "text": " ad",
+    "timestamp": [
+     1.163,
+     1.304
+    ]
+   },
+   {
+    "text": " from",
+    "timestamp": [
+     1.345,
+     1.506
+    ]
+   },
+   {
+    "text": " scratch,",
+    "timestamp": [
+     1.567,
+     2.012
+    ]
+   },
+   {
+    "text": " take",
+    "timestamp": [
+     2.456,
+     2.618
+    ]
+   },
+   {
+    "text": " a",
+    "timestamp": [
+     2.638,
+     2.658
+    ]
+   },
+   {
+    "text": " look",
+    "timestamp": [
+     2.699,
+     2.84
+    ]
+   },
+   {
+    "text": " at",
+    "timestamp": [
+     2.86,
+     2.921
+    ]
+   },
+   {
+    "text": " this.",
+    "timestamp": [
+     2.961,
+     3.164
+    ]
+   }
+  ],
+  "source": "victor-upmeet/whisperx"
+ }
+}

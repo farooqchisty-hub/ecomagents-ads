@@ -1,0 +1,1885 @@
+{
+ "ea2_b1": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.09157986380159856,
+    "end": 2.158,
+    "start": 0.171,
+    "text": " It's called Ecom Agent OS.",
+    "words": [
+     {
+      "end": 0.292,
+      "score": 0.806,
+      "start": 0.171,
+      "word": "It's"
+     },
+     {
+      "end": 0.593,
+      "score": 0.879,
+      "start": 0.332,
+      "word": "called"
+     },
+     {
+      "end": 1.195,
+      "score": 0.866,
+      "start": 0.773,
+      "word": "Ecom"
+     },
+     {
+      "end": 1.616,
+      "score": 0.881,
+      "start": 1.335,
+      "word": "Agent"
+     },
+     {
+      "end": 2.158,
+      "score": 0.974,
+      "start": 1.797,
+      "word": "OS."
+     }
+    ]
+   },
+   {
+    "avg_logprob": -0.09157986380159856,
+    "end": 8.017,
+    "start": 2.68,
+    "text": "16 agent packages, each with its own skills, all sharing one brand brain.",
+    "words": [
+     {
+      "end": 3.141,
+      "score": 0.573,
+      "start": 2.68,
+      "word": "16"
+     },
+     {
+      "end": 3.502,
+      "score": 0.995,
+      "start": 3.262,
+      "word": "agent"
+     },
+     {
+      "end": 4.044,
+      "score": 0.848,
+      "start": 3.542,
+      "word": "packages,"
+     },
+     {
+      "end": 4.626,
+      "score": 0.75,
+      "start": 4.486,
+      "word": "each"
+     },
+     {
+      "end": 4.786,
+      "score": 0.866,
+      "start": 4.666,
+      "word": "with"
+     },
+     {
+      "end": 4.947,
+      "score": 0.829,
+      "start": 4.847,
+      "word": "its"
+     },
+     {
+      "end": 5.148,
+      "score": 0.64,
+      "start": 5.007,
+      "word": "own"
+     },
+     {
+      "end": 5.629,
+      "score": 0.889,
+      "start": 5.208,
+      "word": "skills,"
+     },
+     {
+      "end": 6.311,
+      "score": 0.995,
+      "start": 6.171,
+      "word": "all"
+     },
+     {
+      "end": 6.733,
+      "score": 0.87,
+      "start": 6.372,
+      "word": "sharing"
+     },
+     {
+      "end": 7.074,
+      "score": 0.681,
+      "start": 6.913,
+      "word": "one"
+     },
+     {
+      "end": 7.556,
+      "score": 0.851,
+      "start": 7.154,
+      "word": "brand"
+     },
+     {
+      "end": 8.017,
+      "score": 0.843,
+      "start": 7.616,
+      "word": "brain."
+     }
+    ]
+   },
+   {
+    "avg_logprob": -0.09157986380159856,
+    "end": 11.348,
+    "start": 8.519,
+    "text": "So every agent already knows your products and your voice.",
+    "words": [
+     {
+      "end": 8.639,
+      "score": 0.998,
+      "start": 8.519,
+      "word": "So"
+     },
+     {
+      "end": 8.88,
+      "score": 0.872,
+      "start": 8.699,
+      "word": "every"
+     },
+     {
+      "end": 9.201,
+      "score": 0.818,
+      "start": 8.96,
+      "word": "agent"
+     },
+     {
+      "end": 9.562,
+      "score": 0.793,
+      "start": 9.261,
+      "word": "already"
+     },
+     {
+      "end": 9.883,
+      "score": 0.733,
+      "start": 9.622,
+      "word": "knows"
+     },
+     {
+      "end": 10.064,
+      "score": 0.953,
+      "start": 9.923,
+      "word": "your"
+     },
+     {
+      "end": 10.545,
+      "score": 0.852,
+      "start": 10.104,
+      "word": "products"
+     },
+     {
+      "end": 10.806,
+      "score": 0.81,
+      "start": 10.706,
+      "word": "and"
+     },
+     {
+      "end": 10.987,
+      "score": 0.769,
+      "start": 10.846,
+      "word": "your"
+     },
+     {
+      "end": 11.348,
+      "score": 0.941,
+      "start": 11.027,
+      "word": "voice."
+     }
+    ]
+   }
+  ]
+ },
+ "ea2_b2": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.04078776153425376,
+    "end": 1.174,
+    "start": 0.151,
+    "text": " Here's the ad agent.",
+    "words": [
+     {
+      "end": 0.432,
+      "score": 0.741,
+      "start": 0.151,
+      "word": "Here's"
+     },
+     {
+      "end": 0.553,
+      "score": 0.671,
+      "start": 0.452,
+      "word": "the"
+     },
+     {
+      "end": 0.813,
+      "score": 0.82,
+      "start": 0.653,
+      "word": "ad"
+     },
+     {
+      "end": 1.174,
+      "score": 0.931,
+      "start": 0.873,
+      "word": "agent."
+     }
+    ]
+   },
+   {
+    "avg_logprob": -0.04078776153425376,
+    "end": 2.899,
+    "start": 1.756,
+    "text": "You paste a product link.",
+    "words": [
+     {
+      "end": 1.897,
+      "score": 0.98,
+      "start": 1.756,
+      "word": "You"
+     },
+     {
+      "end": 2.177,
+      "score": 0.779,
+      "start": 1.917,
+      "word": "paste"
+     },
+     {
+      "end": 2.258,
+      "score": 0.503,
+      "start": 2.217,
+      "word": "a"
+     },
+     {
+      "end": 2.639,
+      "score": 0.912,
+      "start": 2.298,
+      "word": "product"
+     },
+     {
+      "end": 2.899,
+      "score": 0.848,
+      "start": 2.679,
+      "word": "link."
+     }
+    ]
+   },
+   {
+    "avg_logprob": -0.04078776153425376,
+    "end": 7.132,
+    "start": 3.261,
+    "text": "It reads the page, writes three angles, and drafts the ad you pick.",
+    "words": [
+     {
+      "end": 3.321,
+      "score": 0.935,
+      "start": 3.261,
+      "word": "It"
+     },
+     {
+      "end": 3.602,
+      "score": 0.787,
+      "start": 3.361,
+      "word": "reads"
+     },
+     {
+      "end": 3.722,
+      "score": 0.998,
+      "start": 3.642,
+      "word": "the"
+     },
+     {
+      "end": 4.123,
+      "score": 0.965,
+      "start": 3.762,
+      "word": "page,"
+     },
+     {
+      "end": 4.705,
+      "score": 0.87,
+      "start": 4.464,
+      "word": "writes"
+     },
+     {
+      "end": 4.986,
+      "score": 0.804,
+      "start": 4.765,
+      "word": "three"
+     },
+     {
+      "end": 5.407,
+      "score": 0.905,
+      "start": 5.086,
+      "word": "angles,"
+     },
+     {
+      "end": 5.928,
+      "score": 0.849,
+      "start": 5.848,
+      "word": "and"
+     },
+     {
+      "end": 6.29,
+      "score": 0.798,
+      "start": 5.969,
+      "word": "drafts"
+     },
+     {
+      "end": 6.43,
+      "score": 0.834,
+      "start": 6.35,
+      "word": "the"
+     },
+     {
+      "end": 6.671,
+      "score": 0.835,
+      "start": 6.53,
+      "word": "ad"
+     },
+     {
+      "end": 6.831,
+      "score": 0.833,
+      "start": 6.691,
+      "word": "you"
+     },
+     {
+      "end": 7.132,
+      "score": 0.928,
+      "start": 6.871,
+      "word": "pick."
+     }
+    ]
+   }
+  ]
+ },
+ "ea2_b3": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.08203125098033955,
+    "end": 1.435,
+    "start": 0.111,
+    "text": " Here's the retention agent.",
+    "words": [
+     {
+      "end": 0.412,
+      "score": 0.733,
+      "start": 0.111,
+      "word": "Here's"
+     },
+     {
+      "end": 0.553,
+      "score": 0.834,
+      "start": 0.452,
+      "word": "the"
+     },
+     {
+      "end": 1.074,
+      "score": 0.931,
+      "start": 0.593,
+      "word": "retention"
+     },
+     {
+      "end": 1.435,
+      "score": 0.944,
+      "start": 1.134,
+      "word": "agent."
+     }
+    ]
+   },
+   {
+    "avg_logprob": -0.08203125098033955,
+    "end": 10.302,
+    "start": 2.097,
+    "text": "It maps your welcome series, cart recovery, post-purchase and win-back emails, written in your voice and ready for your email platform.",
+    "words": [
+     {
+      "end": 2.157,
+      "score": 0.824,
+      "start": 2.097,
+      "word": "It"
+     },
+     {
+      "end": 2.478,
+      "score": 0.955,
+      "start": 2.218,
+      "word": "maps"
+     },
+     {
+      "end": 2.659,
+      "score": 0.982,
+      "start": 2.518,
+      "word": "your"
+     },
+     {
+      "end": 3.08,
+      "score": 0.859,
+      "start": 2.699,
+      "word": "welcome"
+     },
+     {
+      "end": 3.542,
+      "score": 0.774,
+      "start": 3.12,
+      "word": "series,"
+     },
+     {
+      "end": 4.163,
+      "score": 0.928,
+      "start": 3.943,
+      "word": "cart"
+     },
+     {
+      "end": 4.705,
+      "score": 0.899,
+      "start": 4.204,
+      "word": "recovery,"
+     },
+     {
+      "end": 5.949,
+      "score": 0.951,
+      "start": 5.227,
+      "word": "post-purchase"
+     },
+     {
+      "end": 6.109,
+      "score": 0.855,
+      "start": 6.029,
+      "word": "and"
+     },
+     {
+      "end": 6.671,
+      "score": 0.903,
+      "start": 6.169,
+      "word": "win-back"
+     },
+     {
+      "end": 7.233,
+      "score": 0.675,
+      "start": 6.791,
+      "word": "emails,"
+     },
+     {
+      "end": 8.035,
+      "score": 0.792,
+      "start": 7.774,
+      "word": "written"
+     },
+     {
+      "end": 8.115,
+      "score": 1,
+      "start": 8.075,
+      "word": "in"
+     },
+     {
+      "end": 8.296,
+      "score": 0.875,
+      "start": 8.155,
+      "word": "your"
+     },
+     {
+      "end": 8.657,
+      "score": 0.899,
+      "start": 8.336,
+      "word": "voice"
+     },
+     {
+      "end": 8.817,
+      "score": 0.835,
+      "start": 8.737,
+      "word": "and"
+     },
+     {
+      "end": 9.078,
+      "score": 0.823,
+      "start": 8.858,
+      "word": "ready"
+     },
+     {
+      "end": 9.219,
+      "score": 0.979,
+      "start": 9.118,
+      "word": "for"
+     },
+     {
+      "end": 9.379,
+      "score": 0.764,
+      "start": 9.239,
+      "word": "your"
+     },
+     {
+      "end": 9.72,
+      "score": 0.78,
+      "start": 9.459,
+      "word": "email"
+     },
+     {
+      "end": 10.302,
+      "score": 0.83,
+      "start": 9.78,
+      "word": "platform."
+     }
+    ]
+   }
+  ]
+ },
+ "ea2_b4": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.02110877360862035,
+    "end": 6.059,
+    "start": 0.131,
+    "text": " The other 14 handle research, offers, product pages, paid media, and profit.",
+    "words": [
+     {
+      "end": 0.232,
+      "score": 0.785,
+      "start": 0.131,
+      "word": "The"
+     },
+     {
+      "end": 0.453,
+      "score": 0.772,
+      "start": 0.272,
+      "word": "other"
+     },
+     {
+      "end": 1.096,
+      "score": 0.494,
+      "start": 0.513,
+      "word": "14"
+     },
+     {
+      "end": 1.478,
+      "score": 0.861,
+      "start": 1.156,
+      "word": "handle"
+     },
+     {
+      "end": 2.02,
+      "score": 0.812,
+      "start": 1.538,
+      "word": "research,"
+     },
+     {
+      "end": 2.784,
+      "score": 0.858,
+      "start": 2.362,
+      "word": "offers,"
+     },
+     {
+      "end": 3.407,
+      "score": 0.835,
+      "start": 3.065,
+      "word": "product"
+     },
+     {
+      "end": 3.869,
+      "score": 0.815,
+      "start": 3.447,
+      "word": "pages,"
+     },
+     {
+      "end": 4.733,
+      "score": 0.936,
+      "start": 4.472,
+      "word": "paid"
+     },
+     {
+      "end": 5.195,
+      "score": 0.967,
+      "start": 4.813,
+      "word": "media,"
+     },
+     {
+      "end": 5.536,
+      "score": 0.807,
+      "start": 5.436,
+      "word": "and"
+     },
+     {
+      "end": 6.059,
+      "score": 0.852,
+      "start": 5.617,
+      "word": "profit."
+     }
+    ]
+   },
+   {
+    "avg_logprob": -0.02110877360862035,
+    "end": 8.611,
+    "start": 6.883,
+    "text": "Nothing goes live until you approve it.",
+    "words": [
+     {
+      "end": 7.124,
+      "score": 0.859,
+      "start": 6.883,
+      "word": "Nothing"
+     },
+     {
+      "end": 7.345,
+      "score": 0.837,
+      "start": 7.164,
+      "word": "goes"
+     },
+     {
+      "end": 7.727,
+      "score": 0.786,
+      "start": 7.445,
+      "word": "live"
+     },
+     {
+      "end": 7.988,
+      "score": 0.819,
+      "start": 7.767,
+      "word": "until"
+     },
+     {
+      "end": 8.149,
+      "score": 0.86,
+      "start": 8.028,
+      "word": "you"
+     },
+     {
+      "end": 8.51,
+      "score": 0.853,
+      "start": 8.189,
+      "word": "approve"
+     },
+     {
+      "end": 8.611,
+      "score": 0.998,
+      "start": 8.55,
+      "word": "it."
+     }
+    ]
+   }
+  ]
+ },
+ "ea2_b5": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.10145970159455348,
+    "end": 5.395,
+    "start": 0.292,
+    "text": " one payment of 699 rupees with three free bonuses included.",
+    "words": [
+     {
+      "end": 0.413,
+      "score": 0.631,
+      "start": 0.292,
+      "word": "one"
+     },
+     {
+      "end": 0.835,
+      "score": 0.914,
+      "start": 0.493,
+      "word": "payment"
+     },
+     {
+      "end": 0.915,
+      "score": 0.75,
+      "start": 0.855,
+      "word": "of"
+     },
+     {
+      "end": 1.578,
+      "score": 0.579,
+      "start": 0.935,
+      "word": "699"
+     },
+     {
+      "end": 2.924,
+      "score": 0.673,
+      "start": 2.482,
+      "word": "rupees"
+     },
+     {
+      "end": 3.607,
+      "score": 0.746,
+      "start": 3.446,
+      "word": "with"
+     },
+     {
+      "end": 3.989,
+      "score": 0.752,
+      "start": 3.688,
+      "word": "three"
+     },
+     {
+      "end": 4.351,
+      "score": 0.855,
+      "start": 4.13,
+      "word": "free"
+     },
+     {
+      "end": 4.873,
+      "score": 0.812,
+      "start": 4.411,
+      "word": "bonuses"
+     },
+     {
+      "end": 5.395,
+      "score": 0.926,
+      "start": 4.953,
+      "word": "included."
+     }
+    ]
+   },
+   {
+    "avg_logprob": -0.10145970159455348,
+    "end": 7.264,
+    "start": 6.099,
+    "text": "The link is just below.",
+    "words": [
+     {
+      "end": 6.199,
+      "score": 0.91,
+      "start": 6.099,
+      "word": "The"
+     },
+     {
+      "end": 6.46,
+      "score": 0.866,
+      "start": 6.239,
+      "word": "link"
+     },
+     {
+      "end": 6.621,
+      "score": 0.724,
+      "start": 6.541,
+      "word": "is"
+     },
+     {
+      "end": 6.902,
+      "score": 0.791,
+      "start": 6.681,
+      "word": "just"
+     },
+     {
+      "end": 7.264,
+      "score": 0.969,
+      "start": 6.962,
+      "word": "below."
+     }
+    ]
+   }
+  ]
+ },
+ "ea2_h2": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.02634684252552688,
+    "end": 6.238,
+    "start": 0.252,
+    "text": " Agencies charge a monthly retainer for work that 16 ChatGPT agents can now draft for you.",
+    "words": [
+     {
+      "end": 0.734,
+      "score": 0.834,
+      "start": 0.252,
+      "word": "Agencies"
+     },
+     {
+      "end": 1.196,
+      "score": 0.834,
+      "start": 0.794,
+      "word": "charge"
+     },
+     {
+      "end": 1.337,
+      "score": 0.885,
+      "start": 1.296,
+      "word": "a"
+     },
+     {
+      "end": 1.758,
+      "score": 0.918,
+      "start": 1.397,
+      "word": "monthly"
+     },
+     {
+      "end": 2.281,
+      "score": 0.818,
+      "start": 1.819,
+      "word": "retainer"
+     },
+     {
+      "end": 2.482,
+      "score": 0.668,
+      "start": 2.341,
+      "word": "for"
+     },
+     {
+      "end": 2.763,
+      "score": 0.874,
+      "start": 2.542,
+      "word": "work"
+     },
+     {
+      "end": 2.984,
+      "score": 0.867,
+      "start": 2.823,
+      "word": "that"
+     },
+     {
+      "end": 3.607,
+      "score": 0.882,
+      "start": 3.165,
+      "word": "16"
+     },
+     {
+      "end": 4.611,
+      "score": 0.884,
+      "start": 3.707,
+      "word": "ChatGPT"
+     },
+     {
+      "end": 5.033,
+      "score": 0.754,
+      "start": 4.731,
+      "word": "agents"
+     },
+     {
+      "end": 5.213,
+      "score": 0.908,
+      "start": 5.073,
+      "word": "can"
+     },
+     {
+      "end": 5.394,
+      "score": 0.912,
+      "start": 5.254,
+      "word": "now"
+     },
+     {
+      "end": 5.776,
+      "score": 0.932,
+      "start": 5.455,
+      "word": "draft"
+     },
+     {
+      "end": 6.037,
+      "score": 0.77,
+      "start": 5.836,
+      "word": "for"
+     },
+     {
+      "end": 6.238,
+      "score": 0.992,
+      "start": 6.097,
+      "word": "you."
+     }
+    ]
+   }
+  ]
+ },
+ "ea2_h4": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.1647820755055076,
+    "end": 6.622,
+    "start": 0.251,
+    "text": " 16 AI agents for your store, one payment of 699 rupees and no monthly fee.",
+    "words": [
+     {
+      "end": 0.692,
+      "score": 0.853,
+      "start": 0.251,
+      "word": "16"
+     },
+     {
+      "end": 1.133,
+      "score": 0.748,
+      "start": 0.832,
+      "word": "AI"
+     },
+     {
+      "end": 1.594,
+      "score": 0.841,
+      "start": 1.293,
+      "word": "agents"
+     },
+     {
+      "end": 1.794,
+      "score": 0.966,
+      "start": 1.674,
+      "word": "for"
+     },
+     {
+      "end": 1.954,
+      "score": 0.802,
+      "start": 1.814,
+      "word": "your"
+     },
+     {
+      "end": 2.335,
+      "score": 0.728,
+      "start": 1.994,
+      "word": "store,"
+     },
+     {
+      "end": 3.116,
+      "score": 0.855,
+      "start": 2.996,
+      "word": "one"
+     },
+     {
+      "end": 3.557,
+      "score": 0.814,
+      "start": 3.176,
+      "word": "payment"
+     },
+     {
+      "end": 3.677,
+      "score": 0.75,
+      "start": 3.617,
+      "word": "of"
+     },
+     {
+      "end": 4.519,
+      "score": 0.698,
+      "start": 3.697,
+      "word": "699"
+     },
+     {
+      "end": 4.96,
+      "score": 0.777,
+      "start": 4.559,
+      "word": "rupees"
+     },
+     {
+      "end": 5.601,
+      "score": 0.645,
+      "start": 5.48,
+      "word": "and"
+     },
+     {
+      "end": 5.881,
+      "score": 0.916,
+      "start": 5.701,
+      "word": "no"
+     },
+     {
+      "end": 6.322,
+      "score": 0.868,
+      "start": 5.941,
+      "word": "monthly"
+     },
+     {
+      "end": 6.622,
+      "score": 0.989,
+      "start": 6.382,
+      "word": "fee."
+     }
+    ]
+   }
+  ]
+ },
+ "ea2_h5": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.012750799259678884,
+    "end": 5.529,
+    "start": 0.091,
+    "text": " If you're paying for a separate AI tool for every marketing job, there's a much simpler way.",
+    "words": [
+     {
+      "end": 0.132,
+      "score": 0.999,
+      "start": 0.091,
+      "word": "If"
+     },
+     {
+      "end": 0.333,
+      "score": 0.898,
+      "start": 0.152,
+      "word": "you're"
+     },
+     {
+      "end": 0.595,
+      "score": 0.945,
+      "start": 0.353,
+      "word": "paying"
+     },
+     {
+      "end": 0.756,
+      "score": 0.902,
+      "start": 0.635,
+      "word": "for"
+     },
+     {
+      "end": 0.837,
+      "score": 0.502,
+      "start": 0.796,
+      "word": "a"
+     },
+     {
+      "end": 1.3,
+      "score": 0.84,
+      "start": 0.917,
+      "word": "separate"
+     },
+     {
+      "end": 1.743,
+      "score": 0.832,
+      "start": 1.441,
+      "word": "AI"
+     },
+     {
+      "end": 2.166,
+      "score": 0.796,
+      "start": 1.823,
+      "word": "tool"
+     },
+     {
+      "end": 2.387,
+      "score": 0.695,
+      "start": 2.246,
+      "word": "for"
+     },
+     {
+      "end": 2.79,
+      "score": 0.894,
+      "start": 2.568,
+      "word": "every"
+     },
+     {
+      "end": 3.314,
+      "score": 0.907,
+      "start": 2.871,
+      "word": "marketing"
+     },
+     {
+      "end": 3.716,
+      "score": 0.914,
+      "start": 3.374,
+      "word": "job,"
+     },
+     {
+      "end": 4.462,
+      "score": 0.861,
+      "start": 4.28,
+      "word": "there's"
+     },
+     {
+      "end": 4.522,
+      "score": 0.492,
+      "start": 4.482,
+      "word": "a"
+     },
+     {
+      "end": 4.743,
+      "score": 0.955,
+      "start": 4.562,
+      "word": "much"
+     },
+     {
+      "end": 5.247,
+      "score": 0.857,
+      "start": 4.864,
+      "word": "simpler"
+     },
+     {
+      "end": 5.529,
+      "score": 0.863,
+      "start": 5.307,
+      "word": "way."
+     }
+    ]
+   }
+  ]
+ },
+ "ws2_b1": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.02871558859589554,
+    "end": 2.655,
+    "start": 0.111,
+    "text": " It's called Winning Statics.",
+    "words": [
+     {
+      "end": 0.211,
+      "score": 0.845,
+      "start": 0.111,
+      "word": "It's"
+     },
+     {
+      "end": 0.512,
+      "score": 0.878,
+      "start": 0.251,
+      "word": "called"
+     },
+     {
+      "end": 0.932,
+      "score": 0.864,
+      "start": 0.592,
+      "word": "Winning"
+     },
+     {
+      "end": 2.655,
+      "score": 0.864,
+      "start": 1.012,
+      "word": "Statics."
+     }
+    ]
+   },
+   {
+    "avg_logprob": -0.02871558859589554,
+    "end": 13.87,
+    "start": 2.775,
+    "text": "1,169 winning ads, picked from thousands of ads run by more than 5,000 stores, many promoted by creators, all rebuilt with proven creative frameworks.",
+    "words": [
+     {
+      "end": 3.836,
+      "score": 0.617,
+      "start": 2.775,
+      "word": "1,169"
+     },
+     {
+      "end": 4.177,
+      "score": 0.747,
+      "start": 3.896,
+      "word": "winning"
+     },
+     {
+      "end": 4.557,
+      "score": 0.982,
+      "start": 4.337,
+      "word": "ads,"
+     },
+     {
+      "end": 5.278,
+      "score": 0.948,
+      "start": 5.078,
+      "word": "picked"
+     },
+     {
+      "end": 5.478,
+      "score": 0.767,
+      "start": 5.338,
+      "word": "from"
+     },
+     {
+      "end": 6.079,
+      "score": 0.843,
+      "start": 5.599,
+      "word": "thousands"
+     },
+     {
+      "end": 6.179,
+      "score": 1,
+      "start": 6.139,
+      "word": "of"
+     },
+     {
+      "end": 6.52,
+      "score": 0.769,
+      "start": 6.32,
+      "word": "ads"
+     },
+     {
+      "end": 6.76,
+      "score": 0.91,
+      "start": 6.6,
+      "word": "run"
+     },
+     {
+      "end": 6.94,
+      "score": 0.802,
+      "start": 6.8,
+      "word": "by"
+     },
+     {
+      "end": 7.141,
+      "score": 0.906,
+      "start": 7,
+      "word": "more"
+     },
+     {
+      "end": 7.321,
+      "score": 0.792,
+      "start": 7.181,
+      "word": "than"
+     },
+     {
+      "end": 8.142,
+      "score": 0.614,
+      "start": 7.421,
+      "word": "5,000"
+     },
+     {
+      "end": 8.643,
+      "score": 0.681,
+      "start": 8.202,
+      "word": "stores,"
+     },
+     {
+      "end": 9.384,
+      "score": 0.847,
+      "start": 9.143,
+      "word": "many"
+     },
+     {
+      "end": 9.844,
+      "score": 0.814,
+      "start": 9.444,
+      "word": "promoted"
+     },
+     {
+      "end": 10.025,
+      "score": 0.798,
+      "start": 9.884,
+      "word": "by"
+     },
+     {
+      "end": 10.625,
+      "score": 0.811,
+      "start": 10.105,
+      "word": "creators,"
+     },
+     {
+      "end": 11.447,
+      "score": 0.99,
+      "start": 11.306,
+      "word": "all"
+     },
+     {
+      "end": 11.987,
+      "score": 0.778,
+      "start": 11.527,
+      "word": "rebuilt"
+     },
+     {
+      "end": 12.208,
+      "score": 0.75,
+      "start": 12.067,
+      "word": "with"
+     },
+     {
+      "end": 12.688,
+      "score": 0.949,
+      "start": 12.308,
+      "word": "proven"
+     },
+     {
+      "end": 13.209,
+      "score": 0.816,
+      "start": 12.768,
+      "word": "creative"
+     },
+     {
+      "end": 13.87,
+      "score": 0.896,
+      "start": 13.269,
+      "word": "frameworks."
+     }
+    ]
+   }
+  ]
+ },
+ "ws2_b3": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.021739612672139298,
+    "end": 6.606,
+    "start": 0.071,
+    "text": " What comes back is that winning ad built around your product and ready to run in days, not weeks.",
+    "words": [
+     {
+      "end": 0.212,
+      "score": 0.916,
+      "start": 0.071,
+      "word": "What"
+     },
+     {
+      "end": 0.514,
+      "score": 0.686,
+      "start": 0.272,
+      "word": "comes"
+     },
+     {
+      "end": 0.795,
+      "score": 0.914,
+      "start": 0.574,
+      "word": "back"
+     },
+     {
+      "end": 0.956,
+      "score": 0.918,
+      "start": 0.876,
+      "word": "is"
+     },
+     {
+      "end": 1.197,
+      "score": 0.837,
+      "start": 1.016,
+      "word": "that"
+     },
+     {
+      "end": 1.62,
+      "score": 0.839,
+      "start": 1.278,
+      "word": "winning"
+     },
+     {
+      "end": 2.122,
+      "score": 0.792,
+      "start": 1.901,
+      "word": "ad"
+     },
+     {
+      "end": 2.766,
+      "score": 0.781,
+      "start": 2.524,
+      "word": "built"
+     },
+     {
+      "end": 3.107,
+      "score": 0.929,
+      "start": 2.846,
+      "word": "around"
+     },
+     {
+      "end": 3.288,
+      "score": 0.911,
+      "start": 3.148,
+      "word": "your"
+     },
+     {
+      "end": 3.791,
+      "score": 0.93,
+      "start": 3.349,
+      "word": "product"
+     },
+     {
+      "end": 4.254,
+      "score": 0.68,
+      "start": 4.153,
+      "word": "and"
+     },
+     {
+      "end": 4.495,
+      "score": 0.875,
+      "start": 4.294,
+      "word": "ready"
+     },
+     {
+      "end": 4.616,
+      "score": 0.999,
+      "start": 4.535,
+      "word": "to"
+     },
+     {
+      "end": 4.837,
+      "score": 0.887,
+      "start": 4.676,
+      "word": "run"
+     },
+     {
+      "end": 4.978,
+      "score": 0.801,
+      "start": 4.897,
+      "word": "in"
+     },
+     {
+      "end": 5.52,
+      "score": 0.846,
+      "start": 5.038,
+      "word": "days,"
+     },
+     {
+      "end": 6.224,
+      "score": 0.886,
+      "start": 6.043,
+      "word": "not"
+     },
+     {
+      "end": 6.606,
+      "score": 0.886,
+      "start": 6.285,
+      "word": "weeks."
+     }
+    ]
+   }
+  ]
+ },
+ "ws2_b2": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.0355021171271801,
+    "end": 6.106,
+    "start": 0.172,
+    "text": " Find one in your category, copy its prompt, and paste it into ChatGPT with your product link.",
+    "words": [
+     {
+      "end": 0.433,
+      "score": 0.902,
+      "start": 0.172,
+      "word": "Find"
+     },
+     {
+      "end": 0.655,
+      "score": 0.787,
+      "start": 0.554,
+      "word": "one"
+     },
+     {
+      "end": 0.735,
+      "score": 0.76,
+      "start": 0.675,
+      "word": "in"
+     },
+     {
+      "end": 0.896,
+      "score": 0.954,
+      "start": 0.775,
+      "word": "your"
+     },
+     {
+      "end": 1.52,
+      "score": 0.922,
+      "start": 0.936,
+      "word": "category,"
+     },
+     {
+      "end": 2.204,
+      "score": 0.919,
+      "start": 1.882,
+      "word": "copy"
+     },
+     {
+      "end": 2.364,
+      "score": 0.773,
+      "start": 2.244,
+      "word": "its"
+     },
+     {
+      "end": 2.787,
+      "score": 0.851,
+      "start": 2.425,
+      "word": "prompt,"
+     },
+     {
+      "end": 3.31,
+      "score": 0.786,
+      "start": 3.209,
+      "word": "and"
+     },
+     {
+      "end": 3.692,
+      "score": 0.831,
+      "start": 3.39,
+      "word": "paste"
+     },
+     {
+      "end": 3.793,
+      "score": 0.752,
+      "start": 3.732,
+      "word": "it"
+     },
+     {
+      "end": 4.115,
+      "score": 0.861,
+      "start": 3.933,
+      "word": "into"
+     },
+     {
+      "end": 5.08,
+      "score": 0.805,
+      "start": 4.175,
+      "word": "ChatGPT"
+     },
+     {
+      "end": 5.261,
+      "score": 0.802,
+      "start": 5.12,
+      "word": "with"
+     },
+     {
+      "end": 5.422,
+      "score": 0.78,
+      "start": 5.281,
+      "word": "your"
+     },
+     {
+      "end": 5.824,
+      "score": 0.825,
+      "start": 5.462,
+      "word": "product"
+     },
+     {
+      "end": 6.106,
+      "score": 0.938,
+      "start": 5.885,
+      "word": "link."
+     }
+    ]
+   }
+  ]
+ },
+ "ws2_b4": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.069375,
+    "end": 1.918,
+    "start": 0.131,
+    "text": " Each one costs one rupee.",
+    "words": [
+     {
+      "end": 0.292,
+      "score": 0.831,
+      "start": 0.131,
+      "word": "Each"
+     },
+     {
+      "end": 0.533,
+      "score": 0.819,
+      "start": 0.412,
+      "word": "one"
+     },
+     {
+      "end": 1.115,
+      "score": 0.864,
+      "start": 0.633,
+      "word": "costs"
+     },
+     {
+      "end": 1.477,
+      "score": 0.53,
+      "start": 1.356,
+      "word": "one"
+     },
+     {
+      "end": 1.918,
+      "score": 0.692,
+      "start": 1.557,
+      "word": "rupee."
+     }
+    ]
+   },
+   {
+    "avg_logprob": -0.069375,
+    "end": 7.42,
+    "start": 2.38,
+    "text": "They're proven to reach five times return on ad spend and four bonuses come free.",
+    "words": [
+     {
+      "end": 2.561,
+      "score": 0.721,
+      "start": 2.38,
+      "word": "They're"
+     },
+     {
+      "end": 2.922,
+      "score": 0.784,
+      "start": 2.601,
+      "word": "proven"
+     },
+     {
+      "end": 3.023,
+      "score": 0.76,
+      "start": 2.962,
+      "word": "to"
+     },
+     {
+      "end": 3.284,
+      "score": 0.934,
+      "start": 3.083,
+      "word": "reach"
+     },
+     {
+      "end": 3.665,
+      "score": 0.834,
+      "start": 3.384,
+      "word": "five"
+     },
+     {
+      "end": 4.026,
+      "score": 0.722,
+      "start": 3.725,
+      "word": "times"
+     },
+     {
+      "end": 4.468,
+      "score": 0.934,
+      "start": 4.107,
+      "word": "return"
+     },
+     {
+      "end": 4.629,
+      "score": 0.826,
+      "start": 4.548,
+      "word": "on"
+     },
+     {
+      "end": 4.99,
+      "score": 0.948,
+      "start": 4.83,
+      "word": "ad"
+     },
+     {
+      "end": 5.392,
+      "score": 0.857,
+      "start": 5.01,
+      "word": "spend"
+     },
+     {
+      "end": 5.934,
+      "score": 0.775,
+      "start": 5.833,
+      "word": "and"
+     },
+     {
+      "end": 6.235,
+      "score": 0.773,
+      "start": 6.014,
+      "word": "four"
+     },
+     {
+      "end": 6.817,
+      "score": 0.853,
+      "start": 6.275,
+      "word": "bonuses"
+     },
+     {
+      "end": 7.118,
+      "score": 0.86,
+      "start": 6.898,
+      "word": "come"
+     },
+     {
+      "end": 7.42,
+      "score": 0.92,
+      "start": 7.199,
+      "word": "free."
+     }
+    ]
+   }
+  ]
+ },
+ "ws2_b5": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.016496931335755756,
+    "end": 1.208,
+    "start": 0.114,
+    "text": " The link is just below.",
+    "words": [
+     {
+      "end": 0.217,
+      "score": 0.834,
+      "start": 0.114,
+      "word": "The"
+     },
+     {
+      "end": 0.444,
+      "score": 0.863,
+      "start": 0.238,
+      "word": "link"
+     },
+     {
+      "end": 0.589,
+      "score": 0.808,
+      "start": 0.506,
+      "word": "is"
+     },
+     {
+      "end": 0.857,
+      "score": 0.868,
+      "start": 0.63,
+      "word": "just"
+     },
+     {
+      "end": 1.208,
+      "score": 0.926,
+      "start": 0.919,
+      "word": "below."
+     }
+    ]
+   }
+  ]
+ },
+ "ws2_h1": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.08197021437808871,
+    "end": 2.88,
+    "start": 0.051,
+    "text": " Steal these 1169 winning ads.",
+    "words": [
+     {
+      "end": 0.352,
+      "score": 0.878,
+      "start": 0.051,
+      "word": "Steal"
+     },
+     {
+      "end": 0.593,
+      "score": 0.793,
+      "start": 0.392,
+      "word": "these"
+     },
+     {
+      "end": 2.158,
+      "score": 0.543,
+      "start": 0.613,
+      "word": "1169"
+     },
+     {
+      "end": 2.459,
+      "score": 0.904,
+      "start": 2.198,
+      "word": "winning"
+     },
+     {
+      "end": 2.88,
+      "score": 0.95,
+      "start": 2.619,
+      "word": "ads."
+     }
+    ]
+   },
+   {
+    "avg_logprob": -0.08197021437808871,
+    "end": 5.007,
+    "start": 3.502,
+    "text": "They cost one rupee each.",
+    "words": [
+     {
+      "end": 3.622,
+      "score": 0.759,
+      "start": 3.502,
+      "word": "They"
+     },
+     {
+      "end": 3.943,
+      "score": 0.916,
+      "start": 3.642,
+      "word": "cost"
+     },
+     {
+      "end": 4.224,
+      "score": 0.76,
+      "start": 4.104,
+      "word": "one"
+     },
+     {
+      "end": 4.666,
+      "score": 0.841,
+      "start": 4.284,
+      "word": "rupee"
+     },
+     {
+      "end": 5.007,
+      "score": 0.99,
+      "start": 4.826,
+      "word": "each."
+     }
+    ]
+   }
+  ]
+ },
+ "ws2_h4": {
+  "detected_language": "en",
+  "segments": [
+   {
+    "avg_logprob": -0.008219401414195696,
+    "end": 3.164,
+    "start": 0.132,
+    "text": " Before you make another ad from scratch, take a look at this.",
+    "words": [
+     {
+      "end": 0.415,
+      "score": 0.877,
+      "start": 0.132,
+      "word": "Before"
+     },
+     {
+      "end": 0.577,
+      "score": 0.891,
+      "start": 0.455,
+      "word": "you"
+     },
+     {
+      "end": 0.759,
+      "score": 0.971,
+      "start": 0.597,
+      "word": "make"
+     },
+     {
+      "end": 1.062,
+      "score": 0.883,
+      "start": 0.819,
+      "word": "another"
+     },
+     {
+      "end": 1.304,
+      "score": 0.788,
+      "start": 1.163,
+      "word": "ad"
+     },
+     {
+      "end": 1.506,
+      "score": 0.473,
+      "start": 1.345,
+      "word": "from"
+     },
+     {
+      "end": 2.012,
+      "score": 0.913,
+      "start": 1.567,
+      "word": "scratch,"
+     },
+     {
+      "end": 2.618,
+      "score": 0.965,
+      "start": 2.456,
+      "word": "take"
+     },
+     {
+      "end": 2.658,
+      "score": 0.997,
+      "start": 2.638,
+      "word": "a"
+     },
+     {
+      "end": 2.84,
+      "score": 0.996,
+      "start": 2.699,
+      "word": "look"
+     },
+     {
+      "end": 2.921,
+      "score": 0.746,
+      "start": 2.86,
+      "word": "at"
+     },
+     {
+      "end": 3.164,
+      "score": 0.91,
+      "start": 2.961,
+      "word": "this."
+     }
+    ]
+   }
+  ]
+ }
+}
