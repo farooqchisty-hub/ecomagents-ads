@@ -1,0 +1,29 @@
+{
+ "file": "EA-2_H4__A_tech_house.mp4",
+ "ref": "Sixteen AI agents for your store, one payment of six ninety-nine rupees, and no monthly fee. It's called Ee-kom Agent O-S: sixteen agent packages, each with its own skills, all sharing one Brand Brain, so every agent already knows your products and your voice. Here's the ad agent. You paste a product link, it reads the page, writes three angles, and drafts the ad you pick. Here's the retention agent. It maps your welcome series, cart recovery, post-purchase and win-back emails, written in your voice and ready for your email platform. The other fourteen handle research, offers, product pages, paid media and profit. Nothing goes live until you approve it. One payment of six hundred and ninety-nine rupees, with three free bonuses included. The link is just below.",
+ "hyp": "16 AI agents for your store, one payment of 6.99 rupees and no monthly fee. It's called eCom Agent OS, 16 agent packages, each with its own skills, all sharing one brand brain, so every agent already knows your products and your voice. Here's the ad agent. You paste a product link, it reads the page, writes three angles and drafts the ad you pick. Here's the retention agent, it maps your welcome series, cart recovery, post purchase and win back emails, written in your voice and ready for your email platform. The other 14 handle research, offers, product pages, paid media and profit. Nothing goes live until you approve it. One payment of 699 rupees with three free bonuses included. The link is just below.",
+ "ref_words": 134,
+ "wer": 0.0896,
+ "diffs": [
+  [
+   "replace",
+   "six ninety nine",
+   "6 99"
+  ],
+  [
+   "replace",
+   "ee kom",
+   "ecom"
+  ],
+  [
+   "replace",
+   "o s",
+   "os"
+  ],
+  [
+   "replace",
+   "six hundred and ninety nine",
+   "699"
+  ]
+ ]
+}

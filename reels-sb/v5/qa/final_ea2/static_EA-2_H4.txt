@@ -1,0 +1,4 @@
+final/EA-2_H4__A_tech_house.mp4: 1425 frames @ 30 fps; longest still run 0.90s ending 47.47s
+  black frames: []
+  flash frames: []
+  quietest 1 s windows (mean diff): [(0.109, 42.0), (0.119, 41.5), (0.138, 46.0), (0.163, 41.0)]

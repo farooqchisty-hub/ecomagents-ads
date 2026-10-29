@@ -1,0 +1,4 @@
+final/WS-2_H4__A_tech_house.mp4: 1099 frames @ 30 fps; longest still run 0.47s ending 25.13s
+  black frames: []
+  flash frames: []
+  quietest 1 s windows (mean diff): [(0.227, 26.5), (0.237, 25.5), (0.238, 31.5), (0.255, 26.0)]

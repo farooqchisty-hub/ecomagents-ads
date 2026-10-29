@@ -1,0 +1,24 @@
+{
+ "file": "EA-1_H1__A_tech_house.mp4",
+ "ref": "What if your whole marketing team lived inside ChatGPT? Sixteen agents, each one built to run part of your brand. Here's the idea. You get sixteen agent packages, each with its own skills, for the jobs a brand runs on: ads, offers, product pages, retention, even profit tracking. They live inside ChatGPT or Claude, and they share one Brand Brain, so they already know your products and your voice. Watch the ad agent. You paste a product link, it reads the page, checks your Brand Brain, and writes three angles. Pick one, and it drafts the ad itself, ready for you to review. Then the retention agent maps your whole email lifecycle: a welcome series, cart recovery, post-purchase and win-back, written in your voice and ready for your email platform. And nothing goes live until you approve it. It's called Ecom Agent OS: sixteen agents, one Brand Brain and three free bonuses, for six ninety-nine rupees, once. The link is just below.",
+ "hyp": "What if your whole marketing team lived inside Chat GPT? 16 agents, each one built to run part of your brand. Here's the idea. You get 16 agent packages, each with its own skills, for the jobs a brand runs on. Ads, offers, product pages, retention, even profit tracking. They live inside Chat GPT or Claude, and they share one brand brain. So they already know your products and your voice. Watch the ad agent. You paste a product link, it reads the page, checks your brand brain, and writes three angles. Pick one, and it drafts the ad itself, ready for you to review. Then the retention agent maps your whole email life cycle. A welcome series, cart recovery, post purchase, and win back. Written in your voice and ready for your email platform. And nothing goes live until you approve it. It's called Ecom Agent OS, 16 agents, one brand brain, and three free bonuses for 6.99 rupees, once. The link is just below.",
+ "ref_words": 165,
+ "wer": 0.0364,
+ "diffs": [
+  [
+   "replace",
+   "chatgpt",
+   "chat gpt"
+  ],
+  [
+   "replace",
+   "chatgpt",
+   "chat gpt"
+  ],
+  [
+   "replace",
+   "lifecycle",
+   "life cycle"
+  ]
+ ]
+}

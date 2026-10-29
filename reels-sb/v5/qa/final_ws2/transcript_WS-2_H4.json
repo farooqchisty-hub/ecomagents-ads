@@ -1,0 +1,29 @@
+{
+ "file": "WS-2_H4__A_tech_house.mp4",
+ "ref": "Before you make another ad from scratch, take a look at this. It's called Winning Statics: eleven hundred and sixty-nine winning ads, picked from thousands of ads run by more than five thousand stores, many promoted by creators, all rebuilt with proven creative frameworks. Find one in your category, copy its prompt, and paste it into ChatGPT with your product link. What comes back is that winning ad, built around your product and ready to run in days, not weeks. Each one costs one rupee, they're proven to reach five times return on ad spend, and four bonuses come free. The link is just below.",
+ "hyp": "Before you make another ad from scratch, take a look at this, it's called Winning Statics. 1169 winning ads, picked from thousands of ads run by more than 5000 stores, many promoted by creators, all rebuilt with proven creative frameworks. Find one in your category, copy its prompt, and paste it into Chat GPT with your product link. What comes back is that winning ad, built around your product, and ready to run in days, not weeks. Each one costs 1 rupee. They're proven to reach 5 times return on ad spend, and 4 bonuses come free. The link is just below.",
+ "ref_words": 106,
+ "wer": 0.0472,
+ "diffs": [
+  [
+   "replace",
+   "chatgpt",
+   "chat gpt"
+  ],
+  [
+   "replace",
+   "one",
+   "1"
+  ],
+  [
+   "replace",
+   "five",
+   "5"
+  ],
+  [
+   "replace",
+   "four",
+   "4"
+  ]
+ ]
+}

@@ -1,0 +1,3 @@
+EA-2_H2 Pawfull hero: held at full size 1.67s (frames 50, from 21.66s to 23.33s), peak score 0.997
+EA-2_H4 Pawfull hero: held at full size 1.67s (frames 50, from 22.24s to 23.91s), peak score 0.997
+EA-2_H5 Pawfull hero: held at full size 1.63s (frames 49, from 21.17s to 22.81s), peak score 0.997

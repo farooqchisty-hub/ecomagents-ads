@@ -1,0 +1,29 @@
+{
+ "file": "EA-2_H2__A_tech_house.mp4",
+ "ref": "Agencies charge a monthly retainer for work that sixteen ChatGPT agents can now draft for you. It's called Ee-kom Agent O-S: sixteen agent packages, each with its own skills, all sharing one Brand Brain, so every agent already knows your products and your voice. Here's the ad agent. You paste a product link, it reads the page, writes three angles, and drafts the ad you pick. Here's the retention agent. It maps your welcome series, cart recovery, post-purchase and win-back emails, written in your voice and ready for your email platform. The other fourteen handle research, offers, product pages, paid media and profit. Nothing goes live until you approve it. One payment of six hundred and ninety-nine rupees, with three free bonuses included. The link is just below.",
+ "hyp": "Agencies charge a monthly retainer for work that 16 chat GPT agents can now draft for you. It's called ecom agent OS. 16 agent packages, each with its own skills, all sharing one brand brain, so every agent already knows your products and your voice. Here's the ad agent. You paste a product link. It reads the page, writes three angles, and drafts the ad you pick. Here's the retention agent. It maps your welcome series, cart recovery, post purchase and win back emails, written in your voice, and ready for your email platform. The other 14 handle research, offers, product pages, paid media, and profit. Nothing goes live until you approve it. One payment of 699 rupees with three free bonuses included. The link is just below.",
+ "ref_words": 133,
+ "wer": 0.0827,
+ "diffs": [
+  [
+   "replace",
+   "chatgpt",
+   "chat gpt"
+  ],
+  [
+   "replace",
+   "ee kom",
+   "ecom"
+  ],
+  [
+   "replace",
+   "o s",
+   "os"
+  ],
+  [
+   "replace",
+   "six hundred and ninety nine",
+   "699"
+  ]
+ ]
+}

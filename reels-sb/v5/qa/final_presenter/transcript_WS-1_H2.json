@@ -1,0 +1,19 @@
+{
+ "file": "WS-1_H2__A_tech_house.mp4",
+ "ref": "These ads are proven to hit five times return on ad spend, and you're allowed to steal every one of them. These are winning ads, the kind that keep running because they make money. Each one was picked from thousands of ads run by more than five thousand stores, many promoted by creators who called them winners, and rebuilt with proven creative frameworks. So you open the dashboard, find an ad in your category, and copy its prompt. Paste it into ChatGPT with your product link, and that winning ad comes back built around your product, ready to run in days, not weeks. That's eleven hundred and sixty-nine winning ads, proven to reach five times return on ad spend, for one rupee each. You also get four bonuses: a creative testing blueprint, four AI marketing playbooks, an angles and hooks library, and a Meta ads swipe file. It's called Winning Statics. The link is just below.",
+ "hyp": "These ads are proven to hit five times return on ad spend and you're allowed to steal every one of them. These are winning ads, the kind that keep running because they make money. Each one was picked from thousands of ads run by more than 5,000 stores, many promoted by creators who called them winners and rebuilt with proven creative frameworks. So you open the dashboard, find an ad in your category, and copy its prompt. Paste it into chat GPT with your product link and that winning ad comes back built around your product, ready to run in days, not weeks. That's 1169 winning ads proven to reach five times return on ad spend for one rupee each. You also get four bonuses, a creative testing blueprint, four AI marketing playbooks, an angles and hooks library, and a meta ad swipe file. It's called winning statics. The link is just below.",
+ "ref_words": 157,
+ "wer": 0.0191,
+ "diffs": [
+  [
+   "replace",
+   "chatgpt",
+   "chat gpt"
+  ],
+  [
+   "replace",
+   "ads",
+   "ad"
+  ]
+ ]
+}

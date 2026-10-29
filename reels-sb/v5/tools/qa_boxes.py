@@ -10,6 +10,7 @@ missing edge or uneven gaps. Also writes a zoomed crop sheet so the result can b
 """
 import cv2, numpy as np, subprocess, sys, os, json
 video, out, times = sys.argv[1], sys.argv[2], [float(x) for x in sys.argv[3].split(",")]
+YMAX = int(sys.argv[4]) if len(sys.argv) > 4 else 1920     # presenter cuts: ignore the lit ring below the stage band
 os.makedirs(out, exist_ok=True)
 
 def grab(t):
@@ -19,11 +20,11 @@ def grab(t):
 
 def measure(img):
     b, g, r = [img[:, :, k].astype(int) for k in range(3)]
-    yel = ((r > 200) & (g > 170) & (b < 150) & (r - b > 110)).astype(np.uint8)
+    yel = ((r > 170) & (g > 170) & (b < 150) & ((r + g) / 2 - b > 100)).astype(np.uint8); yel[YMAX:] = 0
     n, lab, st, _ = cv2.connectedComponentsWithStats(yel)
     if n < 2: return None
     k = 1 + int(np.argmax(st[1:, 4])); x, y, w, h, a = st[k]
-    if w < 150 or h < 150: return None
+    if w < 50 or h < 40: return None
     m = lab == k
     lum = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY).astype(float)
     res = {"box": [int(x), int(y), int(w), int(h)]}

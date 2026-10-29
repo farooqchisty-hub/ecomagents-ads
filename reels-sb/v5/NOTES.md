@@ -86,3 +86,28 @@ Changes: every scene stage moves to the v5 system.
 - The hook sticker whips across the caption for about 0.3 s on the exit.
 - `hyperframes check` layout errors are intentional overlaps (odometer digits off-reel, fog and dim layers over the UI, the lifted deck over
   the chat); there are no runtime or motion errors.
+
+## Batch 1 finals (WS-2)
+- Build: `mg/build_ws.py` (hooks H1 + H4, bodies 1 to 5, roots `entry/WS-2_H1`, `entry/WS-2_H4` with the v3 join and total),
+  `mg/gptlib.py` (ChatGPT replica, shared with EA next). Body 2 tracking: `tools/track_tour_b2.py` -> `mg/assets/tour/tour_track_b2.json`
+  (product-category list 1085.5,275.5,1276.5,499.5 and Copy JSON prompt 425.5,227.5,552.5,264.5, edge spread 0 px over every frame they are on screen).
+- Picture: `out/WS-2_H1.mp4` (44.133 s, 1324 frames), `out/WS-2_H4.mp4` (42.133 s, 1264 frames), silent.
+- Finals: `final/<CUT>__A_tech_house.mp4` via `v4/tools/remix_v4.py <CUT> A_tech_house --src v5/out/<CUT>.mp4 --out v5/final` (new `--src`/`--out`).
+- QA: `tools/qa_final_ws2.sh` + `tools/transcript_check.py` -> `qa/final_ws2/`.
+
+## Batch 2 finals (EA-2)
+- Build: `mg/build_ea2.py` (hooks H2, H4, H5; body 1 board, body 3 retention, body 4 light-up + approve, body 5 end card; roots `entry/EA-2_H*`).
+  Body 2 is `build_ea.ea_b2` with the Pawfull hero lifting at 6.12 s; body 3 opens on the same hero and flies it back into its agent.
+- Boxes are on our own replica elements (board cards, Brand Brain hub, sidebar agent, flow cards), positioned in the same layer as their targets.
+- Picture: `out/EA-2_H2.mp4` 54.0 s (1620 f), `out/EA-2_H4.mp4` 54.633 s (1639 f), `out/EA-2_H5.mp4` 53.4 s (1602 f). Finals in `final/`.
+- QA: `tools/qa_final_ea2.sh`, `tools/hero_hold.py`, `tools/transcript_check.py` -> `qa/final_ea2/`.
+
+## Batch 3 finals (presenter cuts EA-1, WS-1)
+- Build: `mg/build_presenter.py`. Hooks and closes are transparent overlays (ProRes 4444); bodies reuse the WS-2/EA-2 v5 scenes,
+  retimed to the presenter word stamps (event times warped, or the builders' new timing params), squeezed into the band above the
+  presenter circle, with a lit ring. Hook line metrics are v3's, so every take shift (face position) is exactly v3's.
+- Picture: `tools/composite_v5.py` (v3 composite chain imported unchanged: same trims, frame counts, colour gains, circle crop) with the
+  v3 voice stem; `out/<CUT>.mp4` totals equal v3/out. Finals: `remix_v4.py <CUT> A_tech_house --src v5/out/<CUT>.mp4 --out v5/final`.
+- QA: `tools/qa_presenter.py` -> `qa/final_presenter/report.json` (+ boxes, transcripts, hooks_and_closes.jpg).
+- Fixed on the way: the ChatGPT replica left its window div unclosed (gptlib + build_ea); closed now. The accepted WS-2/EA-2 renders are
+  unaffected (identical pixels), it only matters when a scene is wrapped, as the presenter band does.

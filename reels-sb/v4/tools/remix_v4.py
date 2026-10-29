@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Speed a finished v3 cut and re-score it with a new music bed whose drop lands on the hook/body join.
 
-    python3 remix_v4.py CUT MUSIC_OPTION [--speed 1.15] [--gap 10]
+    python3 remix_v4.py CUT MUSIC_OPTION [--speed 1.15] [--gap 10] [--src PATH] [--out DIR]
 CUT is a v3 cut name (EA-1_H1, WS-2_H1, ...). MUSIC_OPTION is a file stem in ../music. Output ../out/<CUT>__<opt>.mp4.
+--src: picture to use instead of ../../v3/out/<CUT>.mp4 (same length and join; its audio is ignored).
+--out: output folder instead of ../out (relative paths resolve from the current directory).
 Voice: rebuilt clean (faceless: narration clips at their assembly.json placements; presenter: the v3 voice stem),
 sped with atempo (pitch kept). Picture: setpts/speed, back to 30 fps. Music: aligned so its drop hits the new join,
 sidechain-ducked by the voice, level set so the voice sits GAP dB above it while speaking, 1.2 s fade out, -14 LUFS.
@@ -13,7 +15,9 @@ V4 = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); V3 = os.path.j
 A = sys.argv[1:]; CUT, OPT = A[0], A[1]
 SPEED = float(A[A.index("--speed") + 1]) if "--speed" in A else 1.15
 GAP = float(A[A.index("--gap") + 1]) if "--gap" in A else 10.0
-TMP = os.path.join(V4, "work"); os.makedirs(TMP, exist_ok=True); OUT = os.path.join(V4, "out"); os.makedirs(OUT, exist_ok=True)
+TMP = os.path.join(V4, "work"); os.makedirs(TMP, exist_ok=True)
+OUT = os.path.abspath(A[A.index("--out") + 1]) if "--out" in A else os.path.join(V4, "out"); os.makedirs(OUT, exist_ok=True)
+SRC = os.path.abspath(A[A.index("--src") + 1]) if "--src" in A else None
 def run(c):
     r = subprocess.run(c, capture_output=True, text=True)
     if r.returncode: sys.exit(r.stderr[-2000:])
@@ -22,7 +26,7 @@ def dur(p): return float(run(["ffprobe", "-v", "error", "-show_entries", "format
 def momentary(p):
     r = run(["ffmpeg", "-hide_banner", "-i", p, "-af", "ebur128=framelog=verbose", "-f", "null", "-"])
     return [(float(t), float(m)) for t, m in re.findall(r"t:\s*([\d.]+)\s+TARGET.*?M:\s*(-?[\d.]+)", r.stderr)]
-src = os.path.join(V3, "out", f"{CUT}.mp4"); total = dur(src)
+src = SRC or os.path.join(V3, "out", f"{CUT}.mp4"); total = dur(src)
 vo = os.path.join(TMP, f"{CUT}_vo.wav")
 if CUT[:4] in ("EA-2", "WS-2"):
     asm = json.load(open(os.path.join(V3, "out", "assembly.json")))[CUT]; join = asm["join"]

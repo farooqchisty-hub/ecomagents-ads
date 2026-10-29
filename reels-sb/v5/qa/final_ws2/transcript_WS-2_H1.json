@@ -1,0 +1,14 @@
+{
+ "file": "WS-2_H1__A_tech_house.mp4",
+ "ref": "Steal these eleven hundred and sixty-nine winning ads. They cost one rupee each. It's called Winning Statics: eleven hundred and sixty-nine winning ads, picked from thousands of ads run by more than five thousand stores, many promoted by creators, all rebuilt with proven creative frameworks. Find one in your category, copy its prompt, and paste it into ChatGPT with your product link. What comes back is that winning ad, built around your product and ready to run in days, not weeks. Each one costs one rupee, they're proven to reach five times return on ad spend, and four bonuses come free. The link is just below.",
+ "hyp": "Steal these 1169 winning ads. They cost one rupee each. It's called winning statics 1169 winning ads picked from thousands of ads run by more than 5,000 stores many promoted by creators all rebuilt with proven creative frameworks Find one in your category copy its prompt and paste it into chat GPT with your product link What comes back is that winning ad built around your product and ready to run in days? Not weeks each one costs one rupee They're proven to reach five times return on ad spend and four bonuses come free the link is just below",
+ "ref_words": 108,
+ "wer": 0.0185,
+ "diffs": [
+  [
+   "replace",
+   "chatgpt",
+   "chat gpt"
+  ]
+ ]
+}
